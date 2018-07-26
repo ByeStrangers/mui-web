@@ -1,0 +1,94 @@
+<!doctype html>
+<html id="aa">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>添加新地址</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../static/css/common/mui/mui.css" rel="stylesheet" />
+		<link href="../../static/css/common/mui/mui.picker.css" rel="stylesheet" />
+		<link href="../../static/css/common/mui/mui.poppicker.css" rel="stylesheet" />
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：自己样式
+        -->
+		<link href="../../static/css/app/common.css" rel="stylesheet" />
+		<link href="../../static/css/app/system_user/user.css" rel="stylesheet" />
+		<!--引入拓展的图标-->
+		<link rel="stylesheet" href="../../static/css/common/icons/iconfont.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<span class="mui-title mui-text-left">添加新地址</span>
+			<a class="mui-btn mui-btn-link mui-pull-right">保存</a>
+		</header>
+		<div class="mui-content listFont addressAdd">
+			<!--基本信息-->
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label>收货人</label>
+					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="最少2个，最多15字">
+				</div>
+				<div class="mui-input-row">
+					<label>联系电话</label>
+					<input id='account' type="number" class="mui-input-clear mui-input" placeholder="请输入手机号">
+				</div>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right" id="showCityPicker3">
+							所在地区
+							<span class="mui-badge mui-badge-inverted" id="cityResult3">请选择</span>
+						</a>
+					</li>
+				</ul>
+				<div class="mui-input-row textareaStyle">
+					<textarea placeholder="请填写详细地址，5-60个字"></textarea>
+				</div>
+				<ul class="mui-table-view setDefaultAddress">
+					<li class="mui-table-view-cell">
+						<span class="mui-icon iconfont icon-address_radio">&nbsp;设置成默认收货地址</span>
+					</li>
+				</ul>
+			</form>
+		</div>
+
+		<script src="../../static/js/common/mui/mui.js"></script>
+		<script src="../../static/js/common/mui/mui.picker.js"></script>
+		<script src="../../static/js/common/mui/mui.poppicker.js"></script>
+		<script src="../../static/js/common/mui/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../static/js/common/mui/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					/**
+					 * 获取对象属性的值
+					 * 主要用于过滤三级联动中，可能出现的最低级的数据不存在的情况，实际开发中需要注意这一点；
+					 * @param {Object} obj 对象
+					 * @param {String} param 属性名
+					 */
+					var _getParam = function(obj, param) {
+						return obj[param] || '';
+					};
+					var cityPicker3 = new $.PopPicker({
+						layer: 3
+					});
+					cityPicker3.setData(cityData3);
+					var showCityPickerButton = doc.getElementById('showCityPicker3');
+					var cityResult3 = doc.getElementById('cityResult3');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker3.show(function(items) {
+							cityResult3.innerHTML = _getParam(items[0], 'text') + "&nbsp;" + _getParam(items[1], 'text') + "&nbsp;" + _getParam(items[2], 'text');
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+	</body>
+
+</html>

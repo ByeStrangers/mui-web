@@ -11,9 +11,20 @@ header{
 header .mui-title{
 	font-family: simhei;
 	font-size: medium;
-	color: #EA6F5A;
+	color: #EA6F5A;/*EE8C7B*/
 }
 header a{
+	color: #EA6F5A;
+}
+
+header a.mui-btn.mui-pull-right{
+	font-family: simhei;
+	font-size: 14px;
+	color: #EA6F5A;
+}
+header a.mui-btn.mui-pull-right:active{
+	font-family: simhei;
+	font-size: 14px;
 	color: #EA6F5A;
 }
 

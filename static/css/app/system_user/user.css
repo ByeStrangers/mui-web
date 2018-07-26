@@ -1,12 +1,12 @@
 /*个人资料*/
 /*表单*/
-.mui-input-group label {
+.userInfo .mui-input-group label {
 	width: 25%;
 }
 
-.mui-input-row label~input,
-.mui-input-row label~select,
-.mui-input-row label~textarea {
+.userInfo .mui-input-row label~input,
+.userInfo .mui-input-row label~select,
+.userInfo .mui-input-row label~textarea {
 	text-align: right;
 	float: left;
 	width: 70%;
@@ -67,14 +67,6 @@
 	padding: 6px 15px;
 	background-color: #EDFAED;
 }
-
-
-/*资金流水：参考->支付宝收支明细+美团余额明细*/
-.accountFlow ul li{
-	padding: 6px 15px;
-	background-color: #EDFAED;
-}
-
 
 
 /*资金详情:参考微信钱包中零钱明细+支付宝收支明细*/
@@ -176,4 +168,54 @@
 	margin-right: 5px;
 }
 
+/*添加新地址：参考淘宝*/
+.addressAdd .mui-input-group .mui-input-row label{
+	font-family: simhei;
+    line-height: 1.4;
+	font-size: 13px;
+	color: #6F7375;
+	width: 23%;
+}
 
+.addressAdd .mui-table-view .mui-table-view-cell{
+	font-family: simhei;
+	font-size: 13px;
+	color: #6F7375;
+}
+
+.addressAdd .mui-input-row label~input,
+.addressAdd .mui-input-row label~select,
+.addressAdd .mui-input-row label~textarea {
+	width: 72%;
+	float: left;
+	font-family: simhei;
+	font-size: 12px;
+	color: #1D1D1D;
+}
+
+.textareaStyle{
+	min-height: 90px;
+}
+
+.textareaStyle textarea{
+	height: 90px;
+	width: 100%;
+	font-family: simhei;
+	font-size: 12px;
+	color: #1D1D1D;
+	overflow: hidden;
+}
+.setDefaultAddress .mui-table-view-cell{
+	border: none;
+	font-family: simhei;
+	font-size: 12px;
+	color: #1D1D1D;
+}
+.setDefaultAddress .mui-table-view-cell.mui-active{
+	background-color: #C7EDCC;
+}
+.setDefaultAddress span{
+	color: #6F7375;/*点击后颜色: #ea7425;*/
+	font-size: 13px;
+	font-family: simhei;
+}

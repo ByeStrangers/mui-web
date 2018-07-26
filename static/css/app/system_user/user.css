@@ -12,6 +12,18 @@
 	width: 70%;
 }
 
+/*消息通知*/
+.messageNotify ul li{
+	background-color: #EDFAED;
+}
+/*设置上拉/下拉加载背景颜色和字体*/
+.messageNotify .mui-pull-top-pocket,.messageNotify .mui-pull-bottom-pocket{
+	/*background-color: #EDFAED;*/
+}
+.messageNotify .mui-pull-caption{
+	color: #B6B6B6;
+}
+
 /*我的钱包*/
 .theme{
 	margin: 0px;
@@ -222,4 +234,29 @@
 
 .delAddress{
 	color: #EA6F5A !important;/*EE8C7B*/
+}
+
+/*修改密码*/
+.alterPassword .mui-input-group .mui-input-row label{
+	font-family: simhei;
+    line-height: 1.4;
+	font-size: 13px;
+	color: #6F7375;
+	width: 23%;
+}
+
+.alterPassword .mui-table-view .mui-table-view-cell{
+	font-family: simhei;
+	font-size: 13px;
+	color: #6F7375;
+}
+
+.alterPassword .mui-input-row label~input,
+.alterPassword .mui-input-row label~select,
+.alterPassword .mui-input-row label~textarea {
+	width: 72%;
+	float: left;
+	font-family: simhei;
+	font-size: 12px;
+	color: #1D1D1D;
 }

@@ -83,18 +83,8 @@ body {
 .mui-slider-indicator.mui-segmented-control {
 	background-color: #efeff4;
 }
-
+/*资金流水栏目*/
 .accountFlow li{
 	padding: 6px 15px;
 	background-color: #EDFAED;
-}
-#sliderSegmentedControl a{
-	color: #B6B6B6;
-	background-color: white;
-}
-#sliderSegmentedControl a.mui-active{
-	color: #EA6F5A;
-}
-#sliderProgressBar{
-	background-color: #EA6F5A;
 }

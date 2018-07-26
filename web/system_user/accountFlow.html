@@ -139,7 +139,7 @@
 									var self = this;
 									setTimeout(function() {
 										$.toast(index+"上拉");
-										self.endPullUpToRefresh();
+										self.endPullUpToRefresh(false);//1、加载完新数据后，必须执行如下代码，true表示没有更多数据了：
 									}, 1000);
 								}
 							}

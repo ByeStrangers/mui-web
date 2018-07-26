@@ -87,3 +87,17 @@ header a.mui-btn.mui-pull-right:active{
 	font-family: simhei;
 	font-size: small;
 }
+
+/*顶部导航栏背景和字体颜色*/
+#sliderSegmentedControl a{
+	color: #B6B6B6;
+	background-color: white;
+}
+
+#sliderSegmentedControl a.mui-active{
+	color: #EA6F5A;
+}
+
+#sliderProgressBar{
+	background-color: #EA6F5A;
+}

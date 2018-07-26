@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>消息通知</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../static/css/common/mui/mui.css" rel="stylesheet" />
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：自己样式
+        -->
+		<link href="../../static/css/app/common.css" rel="stylesheet" />
+		<link href="../../static/css/app/system_user/user.css" rel="stylesheet" />
+		<style type="text/css">
+			/*下拉刷新置顶*/
+			.mui-bar-nav~.mui-content .mui-pull-top-pocket {
+				top: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">消息通知</h1>
+		</header>
+
+		<div class="mui-content listFont messageNotify">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted sliderSegmentedControl">
+					<a class="mui-control-item" href="#item1mobile">
+						未读消息
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						全部消息
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-6"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+								    <li class="mui-table-view-cell mui-media">
+								        <a href="javascript:;">
+								            <img class="mui-media-object mui-pull-left" src="../../static/img/common/icon-float-wd1.png">
+								            <div class="mui-media-body">
+								                幸福
+								                <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								            </div>
+								        </a>
+								    </li>
+								    <li class="mui-table-view-cell mui-media">
+								        <a href="javascript:;">
+								            <img class="mui-media-object mui-pull-left" src="../../static/img/common/icon-float-wd1.png">
+								            <div class="mui-media-body">
+								                幸福
+								                <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								            </div>
+								        </a>
+								    </li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div id="scroll2" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+								    <li class="mui-table-view-cell mui-media">
+								        <a href="javascript:;">
+								            <img class="mui-media-object mui-pull-left" src="../../static/img/common/icon-float-wd1.png">
+								            <div class="mui-media-body">
+								                幸福
+								                <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								            </div>
+								        </a>
+								    </li>
+								    <li class="mui-table-view-cell mui-media">
+								        <a href="javascript:;">
+								            <img class="mui-media-object mui-pull-left" src="../../static/img/common/icon-float-wd1.png">
+								            <div class="mui-media-body">
+								                幸福
+								                <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								            </div>
+								        </a>
+								    </li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<script src="../../static/js/common/mui/mui.js"></script>
+			<script type="text/javascript">
+				mui.init();
+				(function($) {
+					$(".mui-scroll-wrapper").scroll({
+						//bounce: false,//滚动条是否有弹力默认是true
+						//indicators: false, //是否显示滚动条,默认是true
+					});
+					//循环初始化所有下拉刷新，上拉加载。
+					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+						var scrollId = pullRefreshEl.parentNode.getAttribute("id");
+						//alert(scrollId)
+						$("#" + scrollId).pullRefresh({
+							down: {
+								style: 'circle',
+								callback: function() {
+									setTimeout(function() {
+										$("#" + scrollId).pullRefresh().endPulldownToRefresh();
+										mui.toast(scrollId + "下拉加载");
+									}, 1500);
+								}
+							},
+							up: {
+								auto: true,
+								contentrefresh: '正在加载...',
+								contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+								callback: function() {
+									setTimeout(function() {
+										$("#" + scrollId).pullRefresh().endPullupToRefresh(true);
+										mui.toast(scrollId + "上拉加载");
+									}, 1500);
+								}
+							}
+						});
+					});
+				})(mui);
+			</script>
+	</body>
+
+</html>

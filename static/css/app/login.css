@@ -1,0 +1,45 @@
+
+.mui-input-group {
+	margin-top: 10px;
+}
+
+.mui-input-group:first-child {
+	margin-top: 20px;
+}
+
+.mui-input-group label {
+	width: 22%;
+	font-family: simhei;
+	font-size: medium;
+	background-color: #C7EDCC;
+}
+
+.mui-input-row{
+	border-top: 1px solid #C7C7CC;
+}
+
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+	width: 73%;
+	float: left;
+	background-color: #C7EDCC;
+}
+
+.mui-checkbox input[type=checkbox],
+.mui-radio input[type=radio] {
+	top: 6px;
+}
+
+.mui-content-padded {
+	margin-top: 20px;
+}
+
+.link-area {
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	font-family: simhei;
+	font-size: small;
+}
+

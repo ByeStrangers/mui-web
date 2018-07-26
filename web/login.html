@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../static/css/common/mui/mui.min.css" rel="stylesheet" />
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：自己样式
+        -->
+		<link href="../static/css/app/common.css" rel="stylesheet"/>
+		<link href="../static/css/app/login.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">登录</h1>
+		</header>
+		<div class="mui-content">
+			<form id='login-form' class="mui-input-group">
+				<div class="mui-input-row">
+					<label>账号</label>
+					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="请输入账号">
+				</div>
+				<div class="mui-input-row">
+					<label>密码</label>
+					<input id='password' type="password" class="mui-input-password mui-input" placeholder="请输入密码">
+				</div>
+			</form>
+			<!--<form class="mui-input-group">
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell">
+						自动登录
+						<div id="autoLogin" class="mui-switch">
+							<div class="mui-switch-handle"></div>
+						</div>
+					</li>
+				</ul>
+			</form>-->
+			<div class="mui-content-padded">
+				<button id='login' class="mui-btn mui-btn-block submitBtn">登  录</button>
+				<div class="link-area"><a id='reg' href="register.html">注册账号</a> <span class="spliter">|</span> <a id='forgetPassword' href="forget_password.html">忘记密码</a>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../static/js/common/mui/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

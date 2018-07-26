@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../static/css/common/mui/mui.css" rel="stylesheet" />
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：自己样式
+        -->
+		<link href="../static/css/app/common.css" rel="stylesheet" />
+		<link href="../static/css/app/index.css" rel="stylesheet" />
+		<!--引入拓展的图标-->
+		<link rel="stylesheet" href="../static/css/common/icons/iconfont.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">首页</h1>
+		</header>
+		<nav class="mui-bar mui-bar-tab footer">
+			<a class="mui-tab-item " href="#tabbar_main">
+				<span class="mui-icon iconfont icon-index_home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar_shopping">
+				<span class="mui-icon iconfont icon-index_shopping"></span>
+				<span class="mui-tab-label">积分商城</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar_order">
+				<span class="mui-icon iconfont icon-index_order"></span>
+				<span class="mui-tab-label">订单</span>
+			</a>
+			<a class="mui-tab-item mui-active" href="#tabbar_user">
+				<span class="mui-icon iconfont icon-index_user"></span>
+				<span class="mui-tab-label">个人中心</span>
+			</a>
+		</nav>
+
+		<!--
+        	作者：offline
+        	时间：2018-07-23
+        	描述：以下是各个选项内容
+        -->
+		<div class="mui-content">
+			<!--
+            	作者：offline
+            	时间：2018-07-23
+            	描述：首页模块
+            -->
+			<div id="tabbar_main" class="mui-control-content ">
+
+			</div>
+			<!--
+            	作者：offline
+            	时间：2018-07-23
+            	描述：商城模块
+            -->
+			<div id="tabbar_shopping" class="mui-control-content">
+				<header class="mui-bar mui-bar-nav">
+					<h1 class="mui-title">积分商城</h1>
+				</header>
+				这是商城
+			</div>
+			<!--
+            	作者：offline
+            	时间：2018-07-23
+            	描述：订单
+            -->
+			<div id="tabbar_order" class="mui-control-content mui-active">
+				<header class="mui-bar mui-bar-nav">
+					<h1 class="mui-title">订单</h1>
+				</header>
+			</div>
+			<!--
+            	作者：offline
+            	时间：2018-07-23
+            	描述：个人中心
+            -->
+			<div id="tabbar_user" class="mui-control-content mui-active">
+				<header class="mui-bar mui-bar-nav">
+					<h1 class="mui-title">个人中心</h1>
+				</header>
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<a href="system_user/userInfo.html" class="mui-navigate-right">
+							<img class="mui-media-object mui-pull-left" src="../static/img/common/icon-float-wd1.png">
+							<div class="mui-media-body listFont">
+								昵称
+								<!--mui-ellipsis溢出的文字用省略号代替-->
+								<p class='mui-ellipsis'>187****6416</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<!--消息相关-->
+				<ul class="mui-table-view listView">
+					<li class="mui-table-view-cell mui-media mui-media-icon">
+						<a href="javascript:;" class="mui-navigate-right">
+							<span class="mui-badge mui-badge-red">2</span>
+							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-message_notify"></span>
+							</div>
+							<div class="mui-media-body listFont">
+								消息通知
+							</div>
+						</a>
+					</li>
+					<li class="mui-table-view-cell mui-media mui-media-icon">
+						<a href="javascript:;" class="mui-navigate-right">
+							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-chatInfo"></span>
+							</div>
+							<div class="mui-media-body listFont">
+								我的私信
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<!--金额相关-->
+				<ul class="mui-table-view listView">
+					<li class="mui-table-view-cell mui-media mui-media-icon">
+						<a href="system_user/myAccount.html" class="mui-navigate-right">
+							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-my_money"></span>
+							</div>
+							<div class="mui-media-body listFont">
+								我的钱包
+							</div>
+						</a>
+					</li>
+				</ul>
+				
+				<!--地址相关-->
+				<ul class="mui-table-view listView">
+					<li class="mui-table-view-cell mui-media mui-media-icon">
+						<a href="system_user/address.html" class="mui-navigate-right">
+							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-address_manager"></span>
+							</div>
+							<div class="mui-media-body listFont">
+								我的收货地址
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<!--设置相关-->
+				<ul class="mui-table-view listView">
+					<li class="mui-table-view-cell mui-media mui-media-icon">
+						<a href="javascript:;" class="mui-navigate-right">
+							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-setting"></span>
+							</div>
+							<div class="mui-media-body listFont">
+								基本设置
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<!--密码相关-->
+				<ul class="mui-table-view listView">
+					<li class="mui-table-view-cell mui-media mui-media-icon">
+						<a href="javascript:;" class="mui-navigate-right">
+							<span class="mui-badge mui-badge-inverted">修改登录密码</span>
+							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-alter_password"></span>
+							</div>
+							<div class="mui-media-body listFont">
+								修改密码
+							</div>
+						</a>
+					</li>
+				</ul>
+
+				<ul class="mui-table-view listView">
+					<li class="mui-table-view-cell listFont layout">退出登录</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<script src="../static/js/common/mui/mui.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

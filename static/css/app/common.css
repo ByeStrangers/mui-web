@@ -1,0 +1,78 @@
+/*设置页面背景*/
+.mui-content,body{
+	background-color: #C7EDCC;
+	overflow: hidden;
+}
+/*设置标题背景*/
+header{
+	background-color: white;
+}
+/*设置标题字体*/
+header .mui-title{
+	font-family: simhei;
+	font-size: medium;
+	color: #EA6F5A;
+}
+header a{
+	color: #EA6F5A;
+}
+
+/*设置底部导航栏点击字体颜色*/
+.footer a.mui-tab-item.mui-active{
+	color: #EA6F5A;
+}
+
+/*表单背景*/
+.mui-input-group label {
+	font-family: simhei;
+	font-size: medium;
+	background-color: #C7EDCC;
+}
+
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+	font-family: simhei;
+	font-size: medium;
+	background-color: #C7EDCC;
+}
+
+/*表单行边框*/
+.mui-input-row{
+	border-top: 1px solid #C7C7CC;
+	background-color: #C7EDCC;
+}
+/*表单背景颜色*/
+.mui-input-group{
+	background-color: #C7EDCC;
+}
+
+/*提交按钮*/
+.submitBtn{
+	padding: 5px;
+	background-color: #EA6F5A;
+	color: white;
+	font-family: simhei;
+	font-size: medium;
+}
+
+/*分割竖线*/
+.spliter {
+	color: #bbb;
+	padding: 0 8px;
+}
+
+/*列表背景*/
+.mui-table-view{
+	background-color: #C7EDCC;
+}
+
+/*列表间隔*/
+.listView{
+	margin-top: 1rem;
+}
+/*列表字体*/
+.listFont{
+	font-family: simhei;
+	font-size: small;
+}

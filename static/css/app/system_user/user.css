@@ -1,0 +1,179 @@
+/*个人资料*/
+/*表单*/
+.mui-input-group label {
+	width: 25%;
+}
+
+.mui-input-row label~input,
+.mui-input-row label~select,
+.mui-input-row label~textarea {
+	text-align: right;
+	float: left;
+	width: 70%;
+}
+
+/*我的钱包*/
+.theme{
+	margin: 0px;
+	background-color: #EDFAED;
+}
+
+.details{
+	margin: 0px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	background-color: #EDFAED;
+}
+
+.theme .mui-card-header,.details .mui-card-header{
+	padding: 2px 6px;
+	font-size: 14px;
+	min-height: 30px;
+}
+
+.theme .mui-card-content-inner{
+	padding: 0px;
+}
+
+.money{
+	text-align: center;
+	font-size: medium;
+	font-weight: bold;
+	color: #EA6F5A;
+	padding: 25px;
+}
+
+.opBtn{
+	padding: 5px 10px;
+	height: 40px;
+	text-align: center;
+}
+
+.opBtn span{
+	display: inline-block;
+	width: 32%;
+	background-color: #EA6F5A;
+	color: white;
+	font-family: simhei;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.opBtn span:active{
+	background-color: #FA9D8E;
+}
+
+.details ul li{
+	padding: 6px 15px;
+	background-color: #EDFAED;
+}
+
+
+/*资金流水：参考->支付宝收支明细+美团余额明细*/
+.accountFlow ul li{
+	padding: 6px 15px;
+	background-color: #EDFAED;
+}
+
+
+
+/*资金详情:参考微信钱包中零钱明细+支付宝收支明细*/
+.accountDetail .mui-card:first-child{
+	margin: 0px;
+	background-color: #C7EDCC;
+	box-shadow:none;
+	border-bottom: 1px solid #C8C7CC;
+}
+
+.accountDetail .mui-card-header:first-child{
+	font-size: 14px;
+	height: 60px;
+	color: #8f8f94;
+}
+
+.accountDetail .mui-card-header:first-child span{
+	display: inline-block;
+}
+
+.detailContent{
+	padding: 10px 15px;
+}
+
+.detailContent span{
+	display: block;
+	float: left;
+}
+
+.fontColor{
+	color: black;
+}
+
+/*地址管理*/
+.addAddress{
+	font-family: simhei;
+	font-size: medium;
+	color: white !important;
+	background-color: #EA6F5A;
+}
+
+.addressList{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+/*不用设置固定高度，让他随内容增加而增大*/
+.address{
+	width: 100%;
+	margin-bottom: 15px;
+	background-color: #EDFAED;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+.address div{
+	width: 100%;
+	font-family: simhei;
+	font-size: smaller;
+}
+.addrHeader{
+	height: 25px;
+}
+.nicheng{
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	margin-left: 5px;
+}
+.phone{
+	height: 25px;
+	line-height: 25px;
+	float: right;
+	margin-right: 5px;
+}
+/*内容增加，会使整个高度增加*/
+.addrContent{
+	margin-left: 5px;
+	white-space: normal;
+	border-bottom: 1px solid #CCCCCC;
+}
+.addrFooter{
+	font-size: smaller !important;
+	height: 30px;
+	line-height: 30px;
+}
+.setDefault{
+	color: #ea7425;
+	font-size: smaller !important;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 5px;
+}
+.opAddr{
+	font-size: smaller !important;
+	float: right;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 5px;
+}
+
+

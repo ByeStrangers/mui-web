@@ -1,0 +1,10 @@
+/*个人中心*/
+/*设置图标颜色*/
+#tabbar_user .iconfont{
+	color: #ea7425;
+}
+
+/*退出登录*/
+.layout{
+	text-align: center;
+}

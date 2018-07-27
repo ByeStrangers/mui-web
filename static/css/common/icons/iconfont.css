@@ -3,6 +3,7 @@
   src: url('../../../fonts/common/iconfont.ttf') format('truetype');/* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
 }
 
+
 .iconfont {
   font-family:"iconfont" !important;
   font-size:16px;
@@ -10,6 +11,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-delete_friend:before { content: "\e664"; }
 
 .icon-allOrder:before { content: "\e600"; }
 
@@ -21,11 +24,19 @@
 
 .icon-index_home:before { content: "\e611"; }
 
+.icon-qq:before { content: "\e64c"; }
+
 .icon-address_delete:before { content: "\e632"; }
+
+.icon-upload_img:before { content: "\e649"; }
 
 .icon-capital_flow:before { content: "\e63e"; }
 
 .icon-address_radio:before { content: "\e6f0"; }
+
+.icon-down:before { content: "\e741"; }
+
+.icon-up:before { content: "\e824"; }
 
 .icon-my_money:before { content: "\e631"; }
 
@@ -33,11 +44,21 @@
 
 .icon-home:before { content: "\e648"; }
 
+.icon-collect:before { content: "\e667"; }
+
 .icon-integral:before { content: "\e624"; }
 
 .icon-gift:before { content: "\e622"; }
 
+.icon-see:before { content: "\e6b0"; }
+
+.icon-bottom:before { content: "\e608"; }
+
+.icon-top:before { content: "\e609"; }
+
 .icon-index_order:before { content: "\e669"; }
+
+.icon-weibo:before { content: "\e60c"; }
 
 .icon-index_user:before { content: "\e655"; }
 
@@ -45,9 +66,15 @@
 
 .icon-index_shopping:before { content: "\e620"; }
 
+.icon-add_friend:before { content: "\e675"; }
+
 .icon-setting:before { content: "\e67b"; }
 
 .icon-billboard:before { content: "\e60e"; }
+
+.icon-contacts:before { content: "\e612"; }
+
+.icon-upload_file:before { content: "\e616"; }
 
 .icon-upload:before { content: "\e60f"; }
 
@@ -59,13 +86,16 @@
 
 .icon-address_manager:before { content: "\e61b"; }
 
+.icon-shopping_cart:before { content: "\e635"; }
+
 .icon-alter_password:before { content: "\e627"; }
 
 .icon-menber_manager:before { content: "\e625"; }
+
+.icon-enlarge:before { content: "\e604"; }
 
 .icon-integral_setting:before { content: "\e8e5"; }
 
 .icon-address_edit:before { content: "\e8e6"; }
 
 .icon-address_radioChecked:before { content: "\e8e7"; }
-

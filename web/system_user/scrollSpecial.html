@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>置顶/置底</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../../static/css/common/mui/mui.css" rel="stylesheet" />
 		<link href="../../static/css/app/common.css" rel="stylesheet" />
@@ -252,23 +252,28 @@
 		<script type="text/javascript">
 			mui.init()
 			mui.ready(function() {
+				//滚动条初始化
 				mui("#aaaa").scroll();
 
 				var note = document.getElementById("aaaa");
+				/*
+				 * 以下变量很重要，由于监听滚动条事件，只要滚动一点点就会触发，所以通过一个标志来控制它，让他不每次都触发Jquery效果
+				 * 一直触发animate动画，效果展示不友好，动作很慢
+				 */
 				var animalFlag = false;//表示隐藏
 				note.addEventListener("scroll", function(e) {
 					//获取滚动条位置，负数
 					var currentScrollY = e.detail.y;
 					//将置顶/置底显示
 					if(currentScrollY <= -50){
-						if(!animalFlag){
+						if(!animalFlag){//当未展示时，让其展示出来
 							$("#specialContent").animate({right:"5px"});
 							$("#specialContent1").fadeIn("slow");
 							animalFlag = true;
 						}
 					}
-					else{
-						if(animalFlag){
+					else{//需要隐藏
+						if(animalFlag){//当展示时，让其隐藏出来
 							$("#specialContent").animate({right:"-45px"});
 							$("#specialContent1").fadeOut("slow")
 							animalFlag = false;

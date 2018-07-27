@@ -265,7 +265,7 @@
 					//获取滚动条位置，负数
 					var currentScrollY = e.detail.y;
 					//将置顶/置底显示
-					if(currentScrollY <= -50){
+					if(currentScrollY <= -50){//需要显示
 						if(!animalFlag){//当未展示时，让其展示出来
 							$("#specialContent").animate({right:"5px"});
 							$("#specialContent1").fadeIn("slow");

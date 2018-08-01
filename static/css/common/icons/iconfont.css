@@ -3,7 +3,6 @@
   src: url('../../../fonts/common/iconfont.ttf') format('truetype');/* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
 }
 
-
 .iconfont {
   font-family:"iconfont" !important;
   font-size:16px;
@@ -11,6 +10,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-index-cart:before { content: "\e602"; }
 
 .icon-delete_friend:before { content: "\e664"; }
 
@@ -36,6 +37,8 @@
 
 .icon-down:before { content: "\e741"; }
 
+.icon-type:before { content: "\e76f"; }
+
 .icon-up:before { content: "\e824"; }
 
 .icon-my_money:before { content: "\e631"; }
@@ -57,6 +60,8 @@
 .icon-top:before { content: "\e609"; }
 
 .icon-index_order:before { content: "\e669"; }
+
+.icon-index-address:before { content: "\e601"; }
 
 .icon-weibo:before { content: "\e60c"; }
 
@@ -99,3 +104,11 @@
 .icon-address_edit:before { content: "\e8e6"; }
 
 .icon-address_radioChecked:before { content: "\e8e7"; }
+
+.icon-index-select-top:before { content: "\eb14"; }
+
+.icon-index-select-right:before { content: "\eb15"; }
+
+.icon-index-select-bottom:before { content: "\eb16"; }
+
+.icon-index_type:before { content: "\e615"; }

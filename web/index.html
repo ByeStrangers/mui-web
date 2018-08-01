@@ -18,23 +18,41 @@
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav">
-			<h1 class="mui-title">首页</h1>
+		<header class="mui-bar mui-bar-nav index-bar">
+			<div class="mui-row">
+				<div class="mui-col-xs-3 mui-col-sm-3 address">
+					<a href="#">
+						<span class="mui-icon iconfont icon-index-address listFont">&nbsp;上海&nbsp;</span>
+						<span class="mui-icon iconfont icon-index-select-bottom listFont"></span>
+					</a>
+				</div>
+				<div class="mui-col-xs-7 mui-col-sm-7 search">
+					<div class="mui-input-row mui-search listFont">
+						<input type="search" class="mui-input-clear" placeholder="输入商品名称">
+					</div>
+				</div>
+				<div class="mui-col-xs-2 mui-col-sm-2 cart">
+					<a href="#">
+						<span class="mui-icon iconfont icon-index-cart listFont">&nbsp;购物车</span>
+					</a>
+				</div>
+			</div>
 		</header>
+
 		<nav class="mui-bar mui-bar-tab footer">
-			<a class="mui-tab-item " href="#tabbar_main">
+			<a class="mui-tab-item mui-active" id="navtab-index" href="index.html">
 				<span class="mui-icon iconfont icon-index_home"></span>
 				<span class="mui-tab-label">首页</span>
 			</a>
-			<a class="mui-tab-item" href="#tabbar_shopping">
-				<span class="mui-icon iconfont icon-index_shopping"></span>
-				<span class="mui-tab-label">积分商城</span>
+			<a class="mui-tab-item" id="navtab-type" href="#">
+				<span class="mui-icon iconfont icon-index_type"></span>
+				<span class="mui-tab-label">分类</span>
 			</a>
 			<a class="mui-tab-item" href="#tabbar_order">
 				<span class="mui-icon iconfont icon-index_order"></span>
 				<span class="mui-tab-label">订单</span>
 			</a>
-			<a class="mui-tab-item mui-active" href="#tabbar_user">
+			<a class="mui-tab-item " id="navtab_user" href="system_user/user_center.html">
 				<span class="mui-icon iconfont icon-index_user"></span>
 				<span class="mui-tab-label">个人中心</span>
 			</a>
@@ -43,146 +61,150 @@
 		<!--
         	作者：offline
         	时间：2018-07-23
-        	描述：以下是各个选项内容
+        	描述：首页
         -->
-		<div class="mui-content">
-			<!--
-            	作者：offline
-            	时间：2018-07-23
-            	描述：首页模块
-            -->
-			<div id="tabbar_main" class="mui-control-content ">
+		<div class="mui-content navtabIndex">
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../static/img/banner1/5.jpg">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../static/img/banner1/1.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../static/img/banner1/2.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../static/img/banner1/3.jpg">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="../static/img/banner1/4.jpg">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="../static/img/banner1/1.jpg">
+						</a>
+					</div>
 
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator "></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
 			</div>
-			<!--
-            	作者：offline
-            	时间：2018-07-23
-            	描述：商城模块
-            -->
-			<div id="tabbar_shopping" class="mui-control-content">
-				<header class="mui-bar mui-bar-nav">
-					<h1 class="mui-title">积分商城</h1>
-				</header>
-				这是商城
-			</div>
-			<!--
-            	作者：offline
-            	时间：2018-07-23
-            	描述：订单
-            -->
-			<div id="tabbar_order" class="mui-control-content mui-active">
-				<header class="mui-bar mui-bar-nav">
-					<h1 class="mui-title">订单</h1>
-				</header>
-			</div>
-			<!--
-            	作者：offline
-            	时间：2018-07-23
-            	描述：个人中心
-            -->
-			<div id="tabbar_user" class="mui-control-content mui-active">
-				<header class="mui-bar mui-bar-nav">
-					<h1 class="mui-title">个人中心</h1>
-				</header>
-				<ul class="mui-table-view">
-					<li class="mui-table-view-cell mui-media">
-						<a href="system_user/userInfo.html" class="mui-navigate-right">
-							<img class="mui-media-object mui-pull-left" src="../static/img/common/icon-float-wd1.png">
-							<div class="mui-media-body listFont">
-								昵称
-								<!--mui-ellipsis溢出的文字用省略号代替-->
-								<p class='mui-ellipsis'>187****6416</p>
-							</div>
-						</a>
-					</li>
-				</ul>
-
-				<!--消息相关-->
-				<ul class="mui-table-view listView">
-					<li class="mui-table-view-cell mui-media mui-media-icon">
-						<a href="system_user/messageNotify.html" class="mui-navigate-right">
-							<span class="mui-badge mui-badge-red">2</span>
-							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-message_notify"></span>
-							</div>
-							<div class="mui-media-body listFont">
-								消息通知
-							</div>
-						</a>
-					</li>
-					<li class="mui-table-view-cell mui-media mui-media-icon">
-						<a href="javascript:;" class="mui-navigate-right">
-							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-chatInfo"></span>
-							</div>
-							<div class="mui-media-body listFont">
-								我的私信
-							</div>
-						</a>
-					</li>
-				</ul>
-
-				<!--金额相关-->
-				<ul class="mui-table-view listView">
-					<li class="mui-table-view-cell mui-media mui-media-icon">
-						<a href="system_user/myAccount.html" class="mui-navigate-right">
-							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-my_money"></span>
-							</div>
-							<div class="mui-media-body listFont">
-								我的钱包
-							</div>
-						</a>
-					</li>
-				</ul>
+			<!--菜单-->
+			<div class="mui-row mui-menu">
+				<div class="mui-col-sm-3 mui-col-xs-3 menuTab">
+					 <a class="listFont">
+					 	<div>
+					 		<img src="../static/img/tablist/chongzhi.png" />
+					 	</div>
+					 	<div>话费充值</div>
+		             </a>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+					 <a class="listFont">
+					 	<div>
+					 		<img src="../static/img/tablist/chaoshi.png" />
+					 	</div>
+					 	<div>文辉超市</div>
+		             </a>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+					 <a class="listFont">
+					 	<div>
+					 		<img src="../static/img/tablist/haiwai.png" />
+					 	</div>
+					 	<div>全球购</div>
+		             </a>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+					 <a class="listFont">
+					 	<div>
+					 		<img src="../static/img/tablist/juan.png" />
+					 	</div>
+					 	<div>领劵</div>
+		             </a>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+					 <a class="listFont">
+					 	<div>
+					 		<img src="../static/img/tablist/qian.png" />
+					 	</div>
+					 	<div>惠赚钱</div>
+		             </a>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+					 <a class="listFont">
+					 	<div>
+					 		<img src="../static/img/tablist/shengxian.png" />
+					 	</div>
+					 	<div>文辉生鲜</div>
+		             </a>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+					 <a class="listFont">
+					 	<div>
+					 		<img src="../static/img/tablist/yifu.png" />
+					 	</div>
+					 	<div>服装城</div>
+		             </a>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+					 <a class="listFont">
+					 	<div>
+					 		<img src="../static/img/tablist/fenlei.png" />
+					 	</div>
+					 	<div>更多</div>
+		             </a>
+				</div>
 				
-				<!--地址相关-->
-				<ul class="mui-table-view listView">
-					<li class="mui-table-view-cell mui-media mui-media-icon">
-						<a href="system_user/address.html" class="mui-navigate-right">
-							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-address_manager"></span>
-							</div>
-							<div class="mui-media-body listFont">
-								我的收货地址
-							</div>
-						</a>
-					</li>
-				</ul>
-
-				<!--设置相关-->
-				<ul class="mui-table-view listView">
-					<li class="mui-table-view-cell mui-media mui-media-icon">
-						<a href="javascript:;" class="mui-navigate-right">
-							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-setting"></span>
-							</div>
-							<div class="mui-media-body listFont">
-								基本设置
-							</div>
-						</a>
-					</li>
-				</ul>
-
-				<!--密码相关-->
-				<ul class="mui-table-view listView">
-					<li class="mui-table-view-cell mui-media mui-media-icon">
-						<a href="system_user/alterPassword.html" class="mui-navigate-right">
-							<span class="mui-badge mui-badge-inverted">修改登录密码</span>
-							<div class="mui-media-object mui-pull-left"><span class="mui-icon iconfont icon-alter_password"></span>
-							</div>
-							<div class="mui-media-body listFont">
-								修改密码
-							</div>
-						</a>
-					</li>
-				</ul>
-
-				<ul class="mui-table-view listView">
-					<li class="mui-table-view-cell listFont layout">退出登录</li>
-				</ul>
-
 			</div>
+			<!--快报-->
+			<div class="mui-row mui-notify" style="border: 1px solid red;height: 40px;">
+				
+			</div>
+			
 		</div>
 
 		<script src="../static/js/common/mui/mui.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init();
+			mui.ready(function() {
+				//监听底部导航栏调整
+				mui('.mui-bar-tab').on('tap', 'a', function() {
+					var url = this.getAttribute('href');
+					id = this.getAttribute('id');
+					mui.openWindow({
+						id: id,
+						url: url,
+					});
+				})
+				//获得slider插件对象
+				mui('.mui-slider').slider({
+					interval: 1000 //自动轮播周期，若为0则不自动播放，默认为0；
+				});
+			});
 		</script>
 	</body>
 

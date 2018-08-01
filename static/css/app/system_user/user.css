@@ -1,12 +1,30 @@
+/*个人中心*/
+/*设置列表图标颜色*/
+#tabbar_user .iconfont{
+	color: #ea7425;
+}
+
+/*退出登录*/
+.layout{
+	text-align: center;
+}
+
 /*个人资料*/
 /*表单*/
 .userInfo .mui-input-group label {
+	font-family: simhei;
+    line-height: 1.4;
+	font-size: 13px;
+	color: #6F7375;
 	width: 25%;
 }
 
 .userInfo .mui-input-row label~input,
 .userInfo .mui-input-row label~select,
 .userInfo .mui-input-row label~textarea {
+	font-family: simhei;
+	font-size: 12px;
+	color: #1D1D1D;
 	text-align: right;
 	float: left;
 	width: 70%;
@@ -14,11 +32,11 @@
 
 /*消息通知*/
 .messageNotify ul li{
-	background-color: #EDFAED;
+	background-color: #FFFFFF;
 }
 /*设置上拉/下拉加载背景颜色和字体*/
 .messageNotify .mui-pull-top-pocket,.messageNotify .mui-pull-bottom-pocket{
-	/*background-color: #EDFAED;*/
+	/*background-color: #FFFFFF;*/
 }
 .messageNotify .mui-pull-caption{
 	color: #B6B6B6;
@@ -27,14 +45,14 @@
 /*我的钱包*/
 .theme{
 	margin: 0px;
-	background-color: #EDFAED;
+	background-color: #FFFFFF;
 }
 
 .details{
 	margin: 0px;
 	margin-top: 15px;
 	margin-bottom: 0px;
-	background-color: #EDFAED;
+	background-color: #FFFFFF;
 }
 
 .theme .mui-card-header,.details .mui-card-header{
@@ -77,7 +95,7 @@
 
 .details ul li{
 	padding: 6px 15px;
-	background-color: #EDFAED;
+	background-color: #FFFFFF;
 }
 
 
@@ -129,7 +147,7 @@
 .address{
 	width: 100%;
 	margin-bottom: 15px;
-	background-color: #EDFAED;
+	background-color: #FFFFFF;
 	border-top: 1px solid #CCCCCC;
 	border-bottom: 1px solid #CCCCCC;
 }
@@ -223,9 +241,7 @@
 	font-size: 12px;
 	color: #1D1D1D;
 }
-.setDefaultAddress .mui-table-view-cell.mui-active{
-	background-color: #C7EDCC;
-}
+
 .setDefaultAddress span{
 	color: #6F7375;/*点击后颜色: #ea7425;*/
 	font-size: 13px;
@@ -237,6 +253,9 @@
 }
 
 /*修改密码*/
+.alterPassword{
+	margin-top: 15px;
+}
 .alterPassword .mui-input-group .mui-input-row label{
 	font-family: simhei;
     line-height: 1.4;

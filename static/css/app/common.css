@@ -1,6 +1,6 @@
 /*设置页面背景*/
 .mui-content,body{
-	background-color: #C7EDCC;
+	background-color: #EFEFF4;
 	overflow: hidden;
 }
 /*设置标题背景*/
@@ -37,7 +37,7 @@ header a.mui-btn.mui-pull-right:active{
 .mui-input-group label {
 	font-family: simhei;
 	font-size: medium;
-	background-color: #C7EDCC;
+	background-color: #FFFFFF;
 }
 
 .mui-input-row label~input,
@@ -45,17 +45,17 @@ header a.mui-btn.mui-pull-right:active{
 .mui-input-row label~textarea {
 	font-family: simhei;
 	font-size: medium;
-	background-color: #C7EDCC;
+	background-color: #FFFFFF;
 }
 
 /*表单行边框*/
 .mui-input-row{
 	border-top: 1px solid #C7C7CC;
-	background-color: #C7EDCC;
+	background-color: #FFFFFF;
 }
 /*表单背景颜色*/
 .mui-input-group{
-	background-color: #C7EDCC;
+	background-color: #FFFFFF;
 }
 
 /*提交按钮*/
@@ -75,7 +75,7 @@ header a.mui-btn.mui-pull-right:active{
 
 /*列表背景*/
 .mui-table-view{
-	background-color: #C7EDCC;
+	background-color: #FFFFFF;
 }
 
 /*列表间隔*/
@@ -100,4 +100,31 @@ header a.mui-btn.mui-pull-right:active{
 
 #sliderProgressBar{
 	background-color: #EA6F5A;
+}
+
+/*上拉提示背景色*/
+.mui-pull-bottom-tips {
+	text-align: center;
+	background-color: #FFFFFF;/*上拉提示背景色，默认:#efeff4*/
+	font-size: 15px;
+	line-height: 40px;
+	color: #aaa;
+	font-family: simhei;
+}
+/*默认上拉和下拉刷新样式*/
+.mui-pull-top-pocket{
+	text-align: center;
+	background-color: #FFFFFF;/*上拉提示背景色，默认:#efeff4*/
+	font-size: 15px;
+	line-height: 40px;
+	color: #aaa;
+	font-family: simhei;
+}
+.mui-pull-bottom-pocket{
+	text-align: center;
+	background-color: #FFFFFF;/*上拉提示背景色，默认:#efeff4*/
+	font-size: 15px;
+	line-height: 40px;
+	color: #aaa;
+	font-family: simhei;
 }

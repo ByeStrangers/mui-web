@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>模拟支付宝首页滑动效果</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../static/css/common/mui/mui.css" rel="stylesheet" />
+		<!--
+        	作者：18720920393@163.com
+        	时间：2018-07-28
+        	描述：自己的css
+        -->
+		<link rel="stylesheet" href="../../static/css/app/common.css" />
+		<style type="text/css">
+			.index-bar {
+				height: 50px;
+				background-color: #1b82d2;
+				z-index: -1;
+			}
+			
+			.index-bar .mui-search .mui-placeholder {
+				text-align: left;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="title0" class="mui-bar mui-bar-nav index-bar">
+			<div class="mui-input-row mui-search" style="width: 100%;height: 50px;line-height:50px;border: 1px solid black;text-align: center;">
+				Title
+			</div>
+		</header>
+		<div id="contentMain" class="mui-content mui-scroll-wrapper mui-fullscreen" style="border: 1px solid red;padding:0px;">
+			<div class="mui-scroll">
+				<div id="header0" class="mui-row" style="width: 100%;height:150px;border: 1px solid black;">
+					<div id="header1" style="width: 100%;height: 50px;line-height:50px;border: 1px solid black;text-align: center;">Header1</div>
+					<div id="header2" style="width: 100%;height: 100px;line-height: 80px;border: 1px solid black;text-align: center;">Header2</div>
+				</div>
+				<div style="width: 100%;height: 700px;border: 3px solid yellow"></div>
+				<div style="width: 100%;height: 700px;border: 3px solid darkorange"></div>
+			</div>
+		</div>
+
+		<script src="../../static/js/common/mui/mui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/jquery/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+			mui(".mui-scroll-wrapper").scroll()
+			
+			var contentMain = document.getElementById("contentMain");
+			var title0 = document.getElementById("title0");
+			var header0 = document.getElementById("header0");
+			var header1 = document.getElementById("header1");
+			var header2 = document.getElementById("header2");
+			
+			/***
+			 * 效果描述：当页面向上滑动时，header透明度慢慢变小，当滚动条滑动大小等于header1高度时，将顶部标题z-index大于内容，
+			 *          同时透明度慢慢变大。
+			 * 			当header1-2一半滑动隐藏时，顶部标题透明度为1，header1+header2高度为150px,所以设置计算顶部透明度变量
+			 *          为75.
+			 */
+			var opcityCal = 75;
+			
+			contentMain.addEventListener("scroll",function(e){
+				var currentY = e.detail.y;//获取当前滚动条值，用于计算顶部标题和header的透明度
+				//随着滚动条透明度慢慢变大
+				var opcityHeader = (opcityCal+(currentY*2))/opcityCal; 
+				//随着滚动条透明度慢慢变小
+				var opcityTitle;
+				//
+				var titleFlag = false;
+				if(currentY >= -130){
+					$(header0).css({"opacity":opcityHeader});
+					if(currentY <= -50 && !titleFlag){
+						$(title0).css("z-index",99);
+						titleFlag = true;
+					}
+					if(titleFlag){
+						opcityTitle = (150+currentY)/150;
+						$(title0).css({"opacity":opcityTitle});
+					}
+				}
+				else{
+					$(title0).css("z-index",-1);
+				}
+			},false);
+			
+		</script>
+	</body>
+
+</html>

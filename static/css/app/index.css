@@ -1,10 +1,85 @@
-/*个人中心*/
-/*设置图标颜色*/
-#tabbar_user .iconfont{
-	color: #ea7425;
+/*首页*/
+
+.index-bar {
+	height: 40px;
+	background-color: rgba(255,255,255,0);
+	 -webkit-box-shadow: none;
+            box-shadow:none;
 }
 
-/*退出登录*/
-.layout{
+.index-bar .mui-row .address{
+	height: 40px;
+	line-height: 40px;
+	border: none;
+}
+
+.index-bar .mui-row .address span {
+	color: white;
+	font-size: 13px;
+}
+
+/*搜索框*/
+.index-bar .mui-row .search .mui-search{
+	margin-top: -1px;
+	height: 40px;
+}
+
+.index-bar .mui-row .search .mui-search input{
+	font-size: 13px;
+	color: #C7C7CC;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.index-bar .mui-row .search .mui-placeholder{
+	font-size: 13px;
+	text-align: left;
+}
+.index-bar .mui-row .search .mui-placeholder span{
+	color: #CCCCCC;
+}
+
+.index-bar .mui-row .cart {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 3px;
+	border: none;
+}
+.index-bar .mui-row .cart span{
+	color: white;
+	font-size: 13px;
+}
+
+
+
+/*内容区*/
+
+.navtabIndex {
+	padding: 0px !important;
+}
+/*菜单栏*/
+.mui-menu{
+	height: 180px;
+	background-color: white;
+}
+
+.menuTab{
+	height: 50%;
+	padding: 10px 10px;
+	border: 0px solid red;
+}
+
+.menuTab a{
 	text-align: center;
+}
+
+.menuTab a div{
+	border: 0px solid red;
+	margin: 0 auto;
+	color: #959595;
+}
+
+.menuTab a div img{
+	vertical-align: middle;
+    width: 3rem;
+    height: 3rem;
 }

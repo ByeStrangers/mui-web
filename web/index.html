@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
 		<title>首页</title>
@@ -63,134 +62,228 @@
         	时间：2018-07-23
         	描述：首页
         -->
-		<div class="mui-content navtabIndex">
-			<div id="slider" class="mui-slider">
-				<div class="mui-slider-group mui-slider-loop">
-					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-					<div class="mui-slider-item mui-slider-item-duplicate">
-						<a href="#">
-							<img src="../static/img/banner1/5.jpg">
+		<div class="mui-content navtabIndex mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="../static/img/banner1/5.jpg">
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../static/img/banner1/1.jpg">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../static/img/banner1/2.jpg">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../static/img/banner1/3.jpg">
+							</a>
+						</div>
+						<!-- 第四张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../static/img/banner1/4.jpg">
+							</a>
+						</div>
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="../static/img/banner1/1.jpg">
+							</a>
+						</div>
+
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator "></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+				<!--菜单-->
+				<div class="mui-row mui-menu">
+					<div class="mui-col-sm-3 mui-col-xs-3 menuTab">
+						<a class="listFont">
+							<div>
+								<img src="../static/img/tablist/chongzhi.png" />
+							</div>
+							<div>话费充值</div>
 						</a>
 					</div>
-					<!-- 第一张 -->
-					<div class="mui-slider-item">
-						<a href="#">
-							<img src="../static/img/banner1/1.jpg">
+					<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+						<a href="javascript:;" class="listFont">
+							<div>
+								<img src="../static/img/tablist/chaoshi.png" />
+							</div>
+							<div>文辉超市</div>
 						</a>
 					</div>
-					<!-- 第二张 -->
-					<div class="mui-slider-item">
-						<a href="#">
-							<img src="../static/img/banner1/2.jpg">
+					<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+						<a href="javascript:;" class="listFont">
+							<div>
+								<img src="../static/img/tablist/haiwai.png" />
+							</div>
+							<div>全球购</div>
 						</a>
 					</div>
-					<!-- 第三张 -->
-					<div class="mui-slider-item">
-						<a href="#">
-							<img src="../static/img/banner1/3.jpg">
+					<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+						<a href="javascript:;" class="listFont">
+							<div>
+								<img src="../static/img/tablist/juan.png" />
+							</div>
+							<div>领劵</div>
 						</a>
 					</div>
-					<!-- 第四张 -->
-					<div class="mui-slider-item">
-						<a href="#">
-							<img src="../static/img/banner1/4.jpg">
+					<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+						<a href="javascript:;" class="listFont">
+							<div>
+								<img src="../static/img/tablist/qian.png" />
+							</div>
+							<div>惠赚钱</div>
 						</a>
 					</div>
-					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-					<div class="mui-slider-item mui-slider-item-duplicate">
-						<a href="#">
-							<img src="../static/img/banner1/1.jpg">
+					<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+						<a href="javascript:;" class="listFont">
+							<div>
+								<img src="../static/img/tablist/shengxian.png" />
+							</div>
+							<div>文辉生鲜</div>
+						</a>
+					</div>
+					<div href="javascript:;" class="mui-col-sm-3 mui-col-xs-3  menuTab">
+						<a class="listFont">
+							<div>
+								<img src="../static/img/tablist/yifu.png" />
+							</div>
+							<div>服装城</div>
+						</a>
+					</div>
+					<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
+						<a href="javascript:;" class="listFont">
+							<div>
+								<img src="../static/img/tablist/fenlei.png" />
+							</div>
+							<div>更多</div>
 						</a>
 					</div>
 
 				</div>
-				<div class="mui-slider-indicator">
-					<div class="mui-indicator mui-active"></div>
-					<div class="mui-indicator "></div>
-					<div class="mui-indicator"></div>
-					<div class="mui-indicator"></div>
-					<div class="mui-indicator"></div>
+				<!--快报-->
+				<div class="mui-row listFont mui-notify">
+					<div class="mui-notify-left">
+						<img src="../static/img/1yaocancle.png" />
+					</div>
+					<div class="mui-notify-right swiper-container">
+						<div class="swiper-wrapper">
+							<a class="swiper-slide" href="javascript:;">
+								<div class="scrollContent">
+									<div class="mui-ellipsis scrollContent-left">奥迪姐啊激动jo道德经哦啊舞街区黄金饿哦化为切uiqhn</div>
+									<div class="scrollContent-right">2018-08-01</div>
+								</div>
+							</a>
+							<a class="swiper-slide" href="javascript:;">
+								<div class="scrollContent">
+									<div class="mui-ellipsis scrollContent-left">奥迪姐啊激动jo道德经哦啊舞街区黄金饿哦化为切uiqhn</div>
+									<div class="scrollContent-right">2018-08-02</div>
+								</div>
+							</a>
+							<a class="swiper-slide" href="javascript:;">
+								<div class="scrollContent">
+									<div class="mui-ellipsis scrollContent-left">奥迪姐啊激动jo道德经哦啊舞街区黄金饿哦化为切uiqhn</div>
+									<div class="scrollContent-right">2018-08-03</div>
+								</div>
+							</a>
+						</div>
+					</div>
 				</div>
+				<!--专区-->
+				<div class="mui-row adArea">
+					<div class="adAreaTitle">
+						<img src="../static/img/sp/aishenghuo.png">
+					</div>
+					<div class="adAreaContent">
+						<div class="mui-col-sm-4 mui-col-xs-4 adAreaContent-left">
+							<a href="javascript:;"><img src="../static/img/sp/index-sp1.png"></a>
+						</div>
+						<div class="mui-col-sm-8 mui-col-xs-8 adAreaContent-right">
+							<div class="adAreaContent-right-first">
+								<div class="adAreaContent-right-ad">
+									<a href="javascript:;"><img src="../static/img/sp/index-sp2.png"></a>
+								</div>
+								<div class="adAreaContent-right-ad">
+									<a href="javascript:;"><img src="../static/img/sp/index-sp3.png"></a>
+								</div>
+							</div>
+							<div class="adAreaContent-right-last">
+								<div class="adAreaContent-right-ad">
+									<a href="javascript:;"><img src="../static/img/sp/index-sp4.png"></a>
+								</div>
+								<div class="adAreaContent-right-ad">
+									<a href="javascript:;"><img src="../static/img/sp/index-sp5.png"></a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="mui-row adArea">
+					<div class="adAreaTitle">
+						<img src="../static/img/sp/aishenghuo.png">
+					</div>
+					<div class="adAreaContent">
+						<div class="mui-col-sm-4 mui-col-xs-4 adAreaContent-left">
+							<a href="javascript:;"><img src="../static/img/sp/index-sp1.png"></a>
+						</div>
+						<div class="mui-col-sm-8 mui-col-xs-8 adAreaContent-right">
+							<div class="adAreaContent-right-first">
+								<div class="adAreaContent-right-ad">
+									<a href="javascript:;"><img src="../static/img/sp/index-sp2.png"></a>
+								</div>
+								<div class="adAreaContent-right-ad">
+									<a href="javascript:;"><img src="../static/img/sp/index-sp3.png"></a>
+								</div>
+							</div>
+							<div class="adAreaContent-right-last">
+								<div class="adAreaContent-right-ad">
+									<a href="javascript:;"><img src="../static/img/sp/index-sp4.png"></a>
+								</div>
+								<div class="adAreaContent-right-ad">
+									<a href="javascript:;"><img src="../static/img/sp/index-sp5.png"></a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
 			</div>
-			<!--菜单-->
-			<div class="mui-row mui-menu">
-				<div class="mui-col-sm-3 mui-col-xs-3 menuTab">
-					 <a class="listFont">
-					 	<div>
-					 		<img src="../static/img/tablist/chongzhi.png" />
-					 	</div>
-					 	<div>话费充值</div>
-		             </a>
-				</div>
-				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
-					 <a class="listFont">
-					 	<div>
-					 		<img src="../static/img/tablist/chaoshi.png" />
-					 	</div>
-					 	<div>文辉超市</div>
-		             </a>
-				</div>
-				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
-					 <a class="listFont">
-					 	<div>
-					 		<img src="../static/img/tablist/haiwai.png" />
-					 	</div>
-					 	<div>全球购</div>
-		             </a>
-				</div>
-				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
-					 <a class="listFont">
-					 	<div>
-					 		<img src="../static/img/tablist/juan.png" />
-					 	</div>
-					 	<div>领劵</div>
-		             </a>
-				</div>
-				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
-					 <a class="listFont">
-					 	<div>
-					 		<img src="../static/img/tablist/qian.png" />
-					 	</div>
-					 	<div>惠赚钱</div>
-		             </a>
-				</div>
-				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
-					 <a class="listFont">
-					 	<div>
-					 		<img src="../static/img/tablist/shengxian.png" />
-					 	</div>
-					 	<div>文辉生鲜</div>
-		             </a>
-				</div>
-				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
-					 <a class="listFont">
-					 	<div>
-					 		<img src="../static/img/tablist/yifu.png" />
-					 	</div>
-					 	<div>服装城</div>
-		             </a>
-				</div>
-				<div class="mui-col-sm-3 mui-col-xs-3  menuTab">
-					 <a class="listFont">
-					 	<div>
-					 		<img src="../static/img/tablist/fenlei.png" />
-					 	</div>
-					 	<div>更多</div>
-		             </a>
-				</div>
-				
-			</div>
-			<!--快报-->
-			<div class="mui-row mui-notify" style="border: 1px solid red;height: 40px;">
-				
-			</div>
-			
 		</div>
 
 		<script src="../static/js/common/mui/mui.js"></script>
+		<script src="../static/js/common/jquery/jquery-3.3.1.js"></script>
+		<script src="../static/js/common/swiper/swiper.js"></script>
 		<script type="text/javascript">
 			mui.init();
 			mui.ready(function() {
+				//给界面添加滚动条
+				mui(".mui-scroll-wrapper").scroll({
+					indicators: false, //是否显示滚动条
+					deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+					bounce: true //是否启用回弹
+				});
+				
 				//监听底部导航栏调整
 				mui('.mui-bar-tab').on('tap', 'a', function() {
 					var url = this.getAttribute('href');
@@ -200,10 +293,38 @@
 						url: url,
 					});
 				})
+				
 				//获得slider插件对象
 				mui('.mui-slider').slider({
 					interval: 1000 //自动轮播周期，若为0则不自动播放，默认为0；
 				});
+				
+				//公告栏
+				var swiper = new Swiper('.swiper-container', {
+					direction: 'vertical',
+					slidesPerView: 2, //设置slider容器能够同时显示的slides数量,或者 'auto'则自动根据slides的宽度来设定数量。
+					loop: true, //让Swiper看起来是循环的
+					speed: 2000, //滑动速度，即slider自动滑动开始到结束的时间（单位ms），也是触摸滑动时释放至贴合的时间。
+					autoplay: {
+						delay: 2000,
+						disableOnInteraction: false,
+					},
+					/*
+					autoplay: true, //等同于以下设置
+					autoplay: {
+					  delay: 3000,//自动切换的时间间隔，单位ms
+					  stopOnLastSlide: false,//用户操作swiper之后，是否禁止autoplay。默认为true：停止，此处不停止
+					  disableOnInteraction: true,//如果设置为true，当切换到最后一个slide时停止自动切换。（loop模式下无效）。
+					  },
+					*/
+				});
+				
+				//
+				$(".mui-notify-right a").each(function(i,ele){
+					ele.addEventListener("tap",function(){
+						mui.toast("i = "+i);
+					})
+				})
 			});
 		</script>
 	</body>

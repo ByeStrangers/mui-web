@@ -1,5 +1,5 @@
 /*首页*/
-
+/*顶部搜索栏效果*/
 .index-bar {
 	height: 40px;
 	background-color: rgba(255,255,255,0);
@@ -26,7 +26,7 @@
 
 .index-bar .mui-row .search .mui-search input{
 	font-size: 13px;
-	color: #C7C7CC;
+	color: black;
 	background-color: rgba(255,255,255,0.8);
 }
 
@@ -48,8 +48,6 @@
 	color: white;
 	font-size: 13px;
 }
-
-
 
 /*内容区*/
 
@@ -83,3 +81,89 @@
     width: 3rem;
     height: 3rem;
 }
+
+/*公告栏*/
+.mui-notify{
+	height: 80px;
+	background-color: white;
+	font-size:10px;
+	border-top: 1px solid #CCCCCC;
+}
+.mui-notify .mui-notify-left{
+	height: 80px;
+	width: 35%;
+	float: left;
+}
+.mui-notify .mui-notify-right{
+	height: 80px;
+	width:65%;
+	float: left;
+	color:#ACACB4;
+	overflow: hidden;
+}
+.mui-notify .mui-notify-right a{
+	color:#ACACB4;
+}
+.mui-notify .mui-notify-right .scrollContent{
+	height: 40px;
+	/*line-height: 40px;*/
+	padding: 5px 0px;
+}
+.mui-notify .mui-notify-right .scrollContent .scrollContent-left{
+	height: 30px;
+	line-height:30px;
+	width: 70%;
+	display: block;
+	float: left;
+	text-align: left;
+	padding-right: 5px;
+}
+.mui-notify .mui-notify-right .scrollContent .scrollContent-right{
+	height: 30px;
+	line-height:30px;
+	width: 30%;
+	display: block;
+	float: left;
+	text-align: right;
+	color: #C4C4C4;
+	padding-right: 5px;
+}
+
+/*专区*/
+.adArea{
+	background-color: white;
+}
+.adArea img{
+	width: 100%;
+	height: 100%;
+}
+.adArea .adAreaTitle{
+	width: 100%;
+	height: 40px;
+}
+.adArea .adAreaContent{
+	width: 100%;
+	height: 150px;
+	/*border: 1px solid red;*/
+}
+.adArea .adAreaContent .adAreaContent-left{
+	height: 150px;
+	/*margin: 5px 0px;*/
+	float: left;
+}
+.adArea .adAreaContent .adAreaContent-right{
+	height: 150px;
+	/*margin: 5px 0px;*/
+	float: left;
+}
+.adArea .adAreaContent .adAreaContent-right .adAreaContent-right-first,.adAreaContent-right-last{
+	height: 75px;
+	width: 100%;
+	float: left;
+}
+.adArea .adAreaContent .adAreaContent-right .adAreaContent-right-ad{
+	height: 75px;
+	width: 50%;
+	float: left;
+}
+

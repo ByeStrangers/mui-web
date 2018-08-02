@@ -1,0 +1,46 @@
+/*分类主页*/
+/*顶部搜索栏效果*/
+.index-bar {
+	height: 40px;
+}
+
+.index-bar .mui-row .address{
+	height: 40px;
+	line-height: 40px;
+	border: none;
+}
+
+.index-bar .mui-row .address span {
+	font-size: 16px;
+}
+
+/*搜索框*/
+.index-bar .mui-row .search .mui-search{
+	margin-top: -1px;
+	height: 40px;
+}
+
+.index-bar .mui-row .search .mui-search input{
+	font-size: 13px;
+	color: #EA6F5A;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.index-bar .mui-row .search .mui-placeholder{
+	font-size: 13px;
+	text-align: left;
+}
+.index-bar .mui-row .search .mui-placeholder span{
+	color: #CCCCCC;
+}
+
+.index-bar .mui-row .cart {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 3px;
+	border: none;
+}
+.index-bar .mui-row .cart span{
+	color: #EA6F5A;
+	font-size: 13px;
+}

@@ -102,7 +102,8 @@ header a.mui-btn.mui-pull-right:active{
 	background-color: #EA6F5A;
 }
 
-/*上拉提示背景色*/
+
+/*上拉加载提示背景色*/
 .mui-pull-bottom-tips {
 	text-align: center;
 	background-color: #FFFFFF;/*上拉提示背景色，默认:#efeff4*/
@@ -111,7 +112,7 @@ header a.mui-btn.mui-pull-right:active{
 	color: #aaa;
 	font-family: simhei;
 }
-/*默认上拉和下拉刷新样式*/
+/*默认上拉加载和下拉加载刷新样式*/
 .mui-pull-top-pocket{
 	text-align: center;
 	background-color: #FFFFFF;/*上拉提示背景色，默认:#efeff4*/

@@ -11,6 +11,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .icon-index-cart:before { content: "\e602"; }
 
 .icon-delete_friend:before { content: "\e664"; }
@@ -79,6 +87,8 @@
 
 .icon-contacts:before { content: "\e612"; }
 
+.icon-type_2:before { content: "\e613"; }
+
 .icon-upload_file:before { content: "\e616"; }
 
 .icon-upload:before { content: "\e60f"; }
@@ -88,6 +98,8 @@
 .icon-zhifubao:before { content: "\e8e4"; }
 
 .icon-edit:before { content: "\e6b9"; }
+
+.icon-gouwuche:before { content: "\e603"; }
 
 .icon-address_manager:before { content: "\e61b"; }
 
@@ -112,3 +124,4 @@
 .icon-index-select-bottom:before { content: "\eb16"; }
 
 .icon-index_type:before { content: "\e615"; }
+

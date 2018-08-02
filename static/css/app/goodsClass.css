@@ -44,3 +44,80 @@
 	color: #EA6F5A;
 	font-size: 13px;
 }
+
+/*侧滑菜单展示*/
+#offCanvasSide ul:first-child {
+	background-color: #333333;
+	color: #EA6F5A;
+}
+
+#offCanvasSide ul:last-child {
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+#offCanvasSide ul .mui-active{
+	background-color: #333333;
+	color: #EA6F5A;
+}
+
+/*内容展示*/
+/*下拉刷新加载效果置顶*/
+/*#offCanvasContentScroll .mui-pull-top-pocket{
+	top: 44px !important;
+}*/
+
+#offCanvasContentScroll ul{
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	list-style: none;
+}
+
+#offCanvasContentScroll ul li a{
+	color: black;
+}
+
+.goodInfo{
+	height: 100px;
+	width: 100%;
+}
+.goodInfo .goodInfo-img{
+	height: 100%;
+	width: 25%;
+	float: left;
+}
+.goodInfo .goodInfo-content{
+	height: 100%;
+	width:75%;
+	float: left;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.goodInfo .goodInfo-content .goodInfo-content-desc1{
+	height: 70%;
+	width:100%;
+	float: left;
+	text-align: left;
+	padding-top: 5px;
+	/*border: 1px solid black;*/
+}
+
+.goodInfo .goodInfo-content .goodInfo-content-desc2{
+	height: 30px;
+	line-height: 30px;
+	width:100%;
+	float: left;
+}
+
+.goodInfo .goodInfo-content .goodInfo-content-desc2 .goodInfo-content-desc2-money{
+	color: #FF621A;
+	text-align:left;
+	font-size: 18px;
+	padding-right: 5px;
+	/*border: 1px solid black;*/
+}
+.goodInfo .goodInfo-content .goodInfo-content-desc2 .goodInfo-content-desc2-num{
+	color: #A4A4A4;
+	text-align:left;
+}

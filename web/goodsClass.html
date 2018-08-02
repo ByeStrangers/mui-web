@@ -11,36 +11,320 @@
         	时间：2018-07-24
         	描述：自己样式
         -->
-		<link href="../static/css/app/goodsClass.css" rel="stylesheet" charset="UTF-8"/>
-		<link href="../static/css/app/common.css" rel="stylesheet" charset="UTF-8"/>
+		<link href="../static/css/app/goodsClass.css" rel="stylesheet" charset="UTF-8" />
+		<link href="../static/css/app/common.css" rel="stylesheet" charset="UTF-8" />
 		<!--引入拓展的图标-->
 		<link rel="stylesheet" href="../static/css/common/icons/iconfont.css" />
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav index-bar">
-			<div class="mui-row">
-				<div class="mui-col-xs-1 mui-col-sm-1 address">
-					<a href="javascript:;">
-						<span class="mui-icon iconfont icon-type_2 listFont"></span>
-					</a>
-				</div>
-				<div class="mui-col-xs-9 mui-col-sm-9 search">
-					<div class="mui-input-row mui-search listFont">
-						<input type="search" class="mui-input-clear" placeholder="输入商品名称">
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!-- 菜单容器 -->
+			<aside id="offCanvasSide" class="mui-off-canvas-left">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">主题市场</li>
+						</ul>
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<a href="javascript:;" class="mui-navigate-right">家用电器</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="javascript:;" class="mui-navigate-right">潮流女装</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="javascript:;" class="mui-navigate-right">品牌男装</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="javascript:;" class="mui-navigate-right">电脑办公</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="javascript:;" class="mui-navigate-right">个护化妆</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="javascript:;" class="mui-navigate-right">图书影像</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="mui-col-xs-2 mui-col-sm-2 cart">
-					<a href="javascript:;">
-						<span class="mui-icon iconfont icon-index-cart listFont">&nbsp;购物车</span>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<nav class="mui-bar mui-bar-tab footer">
+					<a class="mui-tab-item mui-active" id="navtab-index" href="index.html">
+						<span class="mui-icon iconfont icon-index_home"></span>
+						<span class="mui-tab-label">首页</span>
 					</a>
+					<a class="mui-tab-item" id="navtab-type" href="goodsClass.html">
+						<span class="mui-icon iconfont icon-index_type"></span>
+						<span class="mui-tab-label">分类</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar_order">
+						<span class="mui-icon iconfont icon-index_order"></span>
+						<span class="mui-tab-label">订单</span>
+					</a>
+					<a class="mui-tab-item " id="navtab_user" href="system_user/user_center.html">
+						<span class="mui-icon iconfont icon-index_user"></span>
+						<span class="mui-tab-label">个人中心</span>
+					</a>
+				</nav>
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav index-bar">
+					<div class="mui-row">
+						<div class="mui-col-xs-1 mui-col-sm-1 address">
+							<a href="#offCanvasSide">
+								<span class="mui-icon iconfont icon-type_2 listFont"></span>
+							</a>
+						</div>
+						<div class="mui-col-xs-9 mui-col-sm-9 search">
+							<div class="mui-input-row mui-search listFont">
+								<input type="search" class="mui-input-clear" placeholder="输入商品名称">
+							</div>
+						</div>
+						<div class="mui-col-xs-2 mui-col-sm-2 cart">
+							<a href="javascript:;">
+								<span class="mui-icon iconfont icon-index-cart listFont">&nbsp;购物车</span>
+							</a>
+						</div>
+					</div>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 主界面具体展示内容 -->
+						<ul>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="goodInfo">
+										<div class="goodInfo-img">
+											<img src="../static/img/tablist/chaoshi.png" />
+										</div>
+										<div class="goodInfo-content">
+											<div class="listFont goodInfo-content-desc1">
+												商品描述
+											</div>
+											<div class="listFont goodInfo-content-desc2">
+												<span class="goodInfo-content-desc2-money">￥199</span>
+												<span class="goodInfo-content-desc2-num">1000已付款</span>
+											</div>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
+				<!-- 遮罩层 -->
+				<div class="mui-off-canvas-backdrop"></div>
 			</div>
-		</header>
-		
+		</div>
+
 		<script src="../static/js/common/mui/mui.js" charset="UTF-8"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init({
+				pullRefresh: {
+					container: "#offCanvasContentScroll", //待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+					down: {
+						style: 'circle',
+						callback: function() {
+							setTimeout(function() {
+								mui('#offCanvasContentScroll').pullRefresh().endPulldownToRefresh();
+								mui.toast("下拉加载");
+							}, 1500);
+						}
+					},
+					up: {
+						auto: true,
+						contentrefresh: '正在加载...',
+						contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+						callback: function() {
+							setTimeout(function() {
+								mui('#offCanvasContentScroll').pullRefresh().endPullupToRefresh(true);
+								mui.toast("上拉加载");
+							}, 1500);
+						}
+					}
+				}
+			});
+			mui.ready(function() {
+				//主界面和侧滑菜单界面均支持区域滚动；
+				mui(".mui-scroll-wrapper").scroll();
+				
+				//监听底部导航栏调整
+				mui('.mui-bar-tab').on('tap', 'a', function() {
+					var url = this.getAttribute('href');
+					id = this.getAttribute('id');
+					mui.openWindow({
+						id: id,
+						url: url,
+					});
+				})
+
+			});
 		</script>
 	</body>
 

@@ -164,6 +164,15 @@
 			mui.init({
 				pullRefresh: {
 					container: ".mui-content", //待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+					down: {
+						style: 'circle',
+						callback: function() {
+							setTimeout(function() {
+								mui('.mui-content').pullRefresh().endPulldownToRefresh();
+								mui.toast("下拉加载");
+							}, 1500);
+						}
+					},
 					up: {
 						height: 50, //可选.默认50.触发上拉加载拖动距离
 						auto: true, //可选,默认false.自动上拉加载一次

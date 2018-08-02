@@ -109,7 +109,7 @@ header a.mui-btn.mui-pull-right:active{
 	background-color: #FFFFFF;/*上拉提示背景色，默认:#efeff4*/
 	font-size: 15px;
 	line-height: 40px;
-	color: #aaa;
+	color: #9B9B9B;
 	font-family: simhei;
 }
 /*默认上拉加载和下拉加载刷新样式*/
@@ -118,7 +118,7 @@ header a.mui-btn.mui-pull-right:active{
 	background-color: #FFFFFF;/*上拉提示背景色，默认:#efeff4*/
 	font-size: 15px;
 	line-height: 40px;
-	color: #aaa;
+	color: #9B9B9B;
 	font-family: simhei;
 }
 .mui-pull-bottom-pocket{
@@ -126,6 +126,6 @@ header a.mui-btn.mui-pull-right:active{
 	background-color: #FFFFFF;/*上拉提示背景色，默认:#efeff4*/
 	font-size: 15px;
 	line-height: 40px;
-	color: #aaa;
+	color: #9B9B9B;
 	font-family: simhei;
 }

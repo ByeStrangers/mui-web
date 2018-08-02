@@ -37,6 +37,7 @@
 /*设置上拉/下拉加载背景颜色和字体*/
 .messageNotify .mui-pull-top-pocket,.messageNotify .mui-pull-bottom-pocket{
 	/*background-color: #FFFFFF;*/
+	top:0px !important;/*下拉刷新加载效果置顶*/
 }
 .messageNotify .mui-pull-caption{
 	color: #B6B6B6;
@@ -196,6 +197,11 @@
 	height: 30px;
 	line-height: 30px;
 	margin-right: 5px;
+}
+
+/*底部上拉加载样式*/
+.addressList ~ .mui-pull-bottom-pocket{
+	margin-top: -15px;
 }
 
 /*添加新地址：参考淘宝*/

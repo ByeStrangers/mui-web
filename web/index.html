@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>首页</title>
@@ -43,7 +44,7 @@
 				<span class="mui-icon iconfont icon-index_home"></span>
 				<span class="mui-tab-label">首页</span>
 			</a>
-			<a class="mui-tab-item" id="navtab-type" href="#">
+			<a class="mui-tab-item" id="navtab-type" href="goodsClass.html">
 				<span class="mui-icon iconfont icon-index_type"></span>
 				<span class="mui-tab-label">分类</span>
 			</a>
@@ -107,7 +108,6 @@
 					<div class="mui-slider-indicator">
 						<div class="mui-indicator mui-active"></div>
 						<div class="mui-indicator "></div>
-						<div class="mui-indicator"></div>
 						<div class="mui-indicator"></div>
 						<div class="mui-indicator"></div>
 					</div>
@@ -267,7 +267,11 @@
 						</div>
 					</div>
 				</div>
-
+				<!--公司介绍-->
+				<div class="mui-content-padded">
+					<p class="mui-ellipsis mui-text-center">xxx有限公司</p>
+					<p class="mui-ellipsis mui-text-center">地址:xxxxx路1518号</p>
+				</div>
 			</div>
 		</div>
 
@@ -283,7 +287,7 @@
 					deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
 					bounce: true //是否启用回弹
 				});
-				
+
 				//监听底部导航栏调整
 				mui('.mui-bar-tab').on('tap', 'a', function() {
 					var url = this.getAttribute('href');
@@ -293,12 +297,12 @@
 						url: url,
 					});
 				})
-				
+
 				//获得slider插件对象
 				mui('.mui-slider').slider({
 					interval: 1000 //自动轮播周期，若为0则不自动播放，默认为0；
 				});
-				
+
 				//公告栏
 				var swiper = new Swiper('.swiper-container', {
 					direction: 'vertical',
@@ -318,11 +322,11 @@
 					  },
 					*/
 				});
-				
+
 				//
-				$(".mui-notify-right a").each(function(i,ele){
-					ele.addEventListener("tap",function(){
-						mui.toast("i = "+i);
+				$(".mui-notify-right a").each(function(i, ele) {
+					ele.addEventListener("tap", function() {
+						mui.toast("i = " + i);
 					})
 				})
 			});

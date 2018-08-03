@@ -1,0 +1,322 @@
+/*结算栏*/
+
+
+/*底部结算栏*/
+
+.settlementCloumn_center {
+	/*border: 1px solid red;*/
+	height: 50px;
+	line-height: 50px;
+	width: 70%;
+	padding-right: 15px;
+	float: left;
+}
+
+.settlementCloumn_center_desc {
+	/*border: 1px solid red;*/
+	height: 50px;
+	line-height: 50px;
+	color: #EA6F5A;
+	font-size: 14px;
+	color: black;
+	margin-left: 5px;
+	display: block;
+	float: right;
+}
+
+.settlementCloumn_center_money {
+	/*border: 1px solid red;*/
+	height: 50px;
+	line-height: 50px;
+	color: #EA6F5A;
+	font-size: 14px;
+	margin-left: 5px;
+	display: block;
+	float: right;
+}
+
+.settlementCloumn_right {
+	/*border: 1px solid red;*/
+	height: 40px;
+	margin-top: 5px;
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+
+.settlementCloumn_right_btn {
+	border: 1px solid red;
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	background-color: #EA6F5A;
+	color: #FFFFFF;
+	font-size: 18px;
+	display: block;
+}
+
+
+/*地址栏*/
+
+.settlementAddresss {
+	/*border-top: 1px solid #CCCCCC;*/
+	height: 120px;
+	font-size: 12px;
+	background-color: white;
+}
+
+.settlementAddresss_top {
+	/*border: 1px solid red;*/
+	height: 30%;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.settlementAddresss_top_name {
+	display: block;
+	height: 100%;
+	width: 60%;
+	/*border: 1px solid red;*/
+	float: left;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.settlementAddresss_top_phone {
+	display: block;
+	height: 100%;
+	width: 40%;
+	/*border: 1px solid red;*/
+	float: left;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.settlementAddresss_center {
+	border-bottom: 1px solid #E3E2E5;
+	height: 40%;
+	padding-bottom: 10px;
+}
+
+.settlementAddresss_center .icon-index-address {
+	display: block;
+	height: 100%;
+	width: 8%;
+	color: #A0A0A0;
+	/*border: 1px solid red;*/
+	float: left;
+	text-align: left;
+	padding: 5px;
+}
+
+.settlementAddresss_center_addr {
+	display: block;
+	height: 100%;
+	width: 92%;
+	/*border: 1px solid red;*/
+	float: left;
+	color: #A0A0A0;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.settlementAddresss_bottom {
+	/*border: 1px solid red;*/
+	height: 30%;
+}
+
+.settlementAddresss_bottom .icon-address_edit {
+	/*border: 1px solid red;*/
+	display: block;
+	height: 100%;
+	width: 91%;
+	color: #ACACB4;
+	float: left;
+	text-align: right;
+	padding-top: 8px;
+	padding-right: 0px;
+}
+
+.settlementAddresss_bottom_edit {
+	/*border: 1px solid red;*/
+	display: block;
+	height: 100%;
+	width: 9%;
+	color: #ACACB4;
+	float: left;
+	text-align: right;
+	padding-top: 8px;
+	padding-right: 6px;
+}
+
+
+/*商品列表*/
+
+.settlementList {
+	background-color: #EFEFF4;
+}
+
+.settlement {
+	margin-top: 10px;
+	padding: 0px;
+	/*border: 1px solid red;*/
+}
+
+
+/*店铺名称栏目*/
+
+.settlement_goodTitle {
+	border-bottom: 1px solid #E3E2E5;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.settlement_goodTitle .shopName {
+	/*border: 1px solid red;*/
+	font-size: 14px;
+	height: 100%;
+	display: block;
+	float: left;
+	padding-left: 5px;
+}
+
+
+/*商品列表栏目*/
+
+.settlement_goodList {
+	/*border: 1px solid blue;*/
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*商品列表 图片列*/
+
+.settlement_goodList_img {
+	/*border: 1px solid red;*/
+	height: 100px;
+	float: left;
+	padding: 1px;
+}
+
+.settlement_goodList_img img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*商品列表 商品描述列*/
+
+.settlement_goodList_desc {
+	/*border: 1px solid red;*/
+	height: 100%;
+	float: left;
+	height: 100px;
+}
+
+.settlement_goodList_desc .goodDesc {
+	/*border: 1px solid red;*/
+	height: 40%;
+	width: 100%;
+	padding: 2px;
+	float: left;
+	font-size: 12px;
+}
+
+.settlement_goodList_desc .goodParam {
+	/*border: 1px solid red;*/
+	height: 30%;
+	width: 100%;
+	float: left;
+	padding: 5px;
+}
+
+.settlement_goodList_desc .goodParam span:first-child {
+	/*border: 1px solid red;*/
+	display: block;
+	float: left;
+	color: #919191;
+	font-size: 10px;
+}
+
+.settlement_goodList_desc .goodMoney {
+	/*border: 1px solid red;*/
+	height: 30%;
+	width: 100%;
+	float: left;
+	padding: 3px;
+}
+
+.settlement_goodList_desc .goodMoney span:first-child {
+	/*border: 1px solid red;*/
+	height: 100%;
+	width: 90%;
+	display: block;
+	float: left;
+	color: #EA6F5A;
+	font-size: 14px;
+}
+
+.settlement_goodList_desc .goodMoney span:last-child {
+	/*border: 1px solid red;*/
+	height: 100%;
+	width: 10%;
+	display: block;
+	float: left;
+	color: #ACACB4;
+	padding-right: 6px;
+	font-size: 12px;
+}
+
+
+/*店铺底部留言*/
+
+.settlement_goodFooter {
+	/*border: 1px solid red;*/
+	height: 60px;
+	background-color: white;
+}
+
+.settlement_goodFooter div {
+	/*border: 1px solid red;*/
+	height: 50%;
+}
+
+.settlement_goodFooter div:first-child {
+	border-bottom: 1px solid #E3E2E5;
+}
+
+.settlement_goodFooter_msg {
+	height: 100%;
+	width: 19%;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.settlement_goodFooter div:first-child input {
+	height: 100%;
+	width: 78%;
+	border: none;
+}
+
+.settlement_goodFooter_money {
+	height: 100%;
+	display: inline-block;
+	padding-top: 2px;
+	padding-right: 5px;
+	float: right;
+	color: #EA6F5A;
+	/*border: 1px solid red;*/
+}
+
+.settlement_goodFooter_desc {
+	height: 100%;
+	display: inline-block;
+	text-align: right;
+	padding-top: 2px;
+	float: right;
+	/*border: 1px solid red;*/
+}

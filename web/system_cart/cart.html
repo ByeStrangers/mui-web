@@ -22,23 +22,204 @@
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">购物车（3）</h1>
 		</header>
-		<nav class="mui-bar mui-bar-tab listFont">
-			<div style="border: 1px solid red;width: 20%;float: left;text-align: left;">
-				<span class="iconfont icon-address_radio" style="border: 1px solid red;height: 50px;line-height: 50px;font-size: x-large;margin-left: 5px;display: block;float: left;"></span>
-				<span class="" style="border: 1px solid red;height: 50px;line-height: 50px;color: #EA6F5A;font-size: 14px;color: black;margin-left: 5px;display: block;float: left;">全选</span>
+		<nav class="mui-bar mui-bar-tab listFont settlementCloumn">
+			<div class="settlementCloumn_left">
+				<span class="iconfont icon-address_radio settlementCloumn_left_radio" onclick="alert('谢谢您选我');"></span>
+				<span class="settlementCloumn_left_font">全选</span>
 			</div>
-			<div style="border: 1px solid red;height: 50px;line-height: 50px;width: 50%;float: left;">
-				<span class="" style="border: 1px solid red;height: 50px;line-height: 50px;color: #EA6F5A;font-size: 14px;color: black;margin-left: 5px;display: block;float: left;">商品金额：</span>
-				<span class="" style="border: 1px solid red;height: 50px;line-height: 50px;color: #EA6F5A;font-size: 14px;margin-left: 5px;display: block;float: left;">￥240.20</span>
+			<div class="settlementCloumn_center">
+				<span class="settlementCloumn_center_desc">商品金额：</span>
+				<span class="settlementCloumn_center_money">￥240.20</span>
 			</div>
-			<div style="border: 1px solid red;height: 40px;margin-top:5px;width: 30%;float: left;text-align: center;">
-				<span class="" style="border: 1px solid red;height: 40px;line-height: 40px;width:100%;color: #EA6F5A;font-size: 18px;display: block;">去结算(3)</span>
+			<div class="settlementCloumn_right">
+				<span class="settlementCloumn_right_btn">去结算(3)</span>
 			</div>
 		</nav>
-		
+
+		<div class="mui-content mui-fullscreen mui-scroll-wrapper listFont">
+			<!--添加滚动条-->
+			<div id="shoppingCartScroll" class="mui-scroll">
+				<ul class="mui-table-view shoppingCartList">
+					<!--店铺&商品列表-->
+					<li class="mui-table-view-cell shoppingCart">
+						<div>
+							<div class="shoppingCart-goodTitle">
+								<span class="mui-col-sm-1 mui-col-xs-1 iconfont icon-address_radio" onclick="alert('谢谢您选我');"></span>
+								<span class="shopName">
+									三只松鼠旗舰店
+								</span>
+								<span class="iconfont icon-index-select-right">
+								</span>
+							</div>
+						</div>
+						<ul class="mui-table-view listFont">
+							<!--当前店铺商品列表-->
+							<a href="javascript:;">
+								<li class="mui-table-view-cell shoppingCart-goodList">
+									<div class="mui-col-sm-1 mui-col-xs-1 shoppingCart-goodList-left">
+										<span class=" iconfont icon-address_radio" onclick="alert('谢谢您选我');"></span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-3 shoppingCart-goodList-center">
+										<img src="../../static/img/sp/index-sp2.png" />
+									</div>
+									<div class="mui-col-sm-8 mui-col-xs-8 shoppingCart-goodList-right">
+										<div class="mui-ellipsis-2  listFont goodDesc">
+											【三只松鼠_开口松子218g × 2】休闲零食小吃坚果炒货特产东北松子
+										</div>
+										<div class="goodParam">
+											<span>口味：香辣&nbsp;,&nbsp;规格：218g</span>
+											<span class="iconfont icon-address_delete" onclick="alert('删除该商品么？');"></span>
+										</div>
+										<div class="goodMoney">
+											<span>￥35.20</span>
+											<!--默认最小值为0，最大值为99-->
+											<div class="mui-numbox" data-numbox-min='0' data-numbox-max='99'>
+												<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+												<input class="mui-input-numbox" type="number" />
+												<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</a>
+							<a href="javascript:;">
+								<li class="mui-table-view-cell shoppingCart-goodList">
+									<div class="mui-col-sm-1 mui-col-xs-1 shoppingCart-goodList-left">
+										<span class=" iconfont icon-address_radio"></span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-3 shoppingCart-goodList-center">
+										<img src="../../static/img/sp/index-sp2.png" />
+									</div>
+									<div class="mui-col-sm-8 mui-col-xs-8 shoppingCart-goodList-right">
+										<div class="mui-ellipsis-2  listFont goodDesc">
+											【三只松鼠_开口松子218g × 2】休闲零食小吃坚果炒货特产东北松子
+										</div>
+										<div class="goodParam">
+											<span>口味：香辣&nbsp;,&nbsp;规格：218g</span>
+											<span class="iconfont icon-address_delete" onclick="alert('删除该商品么？');"></span>
+										</div>
+										<div class="goodMoney">
+											<span>￥35.20</span>
+											<!--默认最小值为0，最大值为99-->
+											<div class="mui-numbox" data-numbox-min='0' data-numbox-max='99'>
+												<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+												<input class="mui-input-numbox" type="number" />
+												<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</a>
+
+						</ul>
+					</li>
+					<li class="mui-table-view-cell shoppingCart">
+						<div>
+							<div class="shoppingCart-goodTitle">
+								<span class="mui-col-sm-1 mui-col-xs-1 iconfont icon-address_radio" onclick="alert('谢谢您选我');"></span>
+								<span class="shopName">
+									三只松鼠旗舰店
+								</span>
+								<span class="iconfont icon-index-select-right">
+								</span>
+							</div>
+						</div>
+						<ul class="mui-table-view listFont">
+							<!--当前店铺商品列表-->
+							<a href="javascript:;">
+								<li class="mui-table-view-cell shoppingCart-goodList">
+									<div class="mui-col-sm-1 mui-col-xs-1 shoppingCart-goodList-left">
+										<span class=" iconfont icon-address_radio" onclick="alert('谢谢您选我');"></span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-3 shoppingCart-goodList-center">
+										<img src="../../static/img/sp/index-sp2.png" />
+									</div>
+									<div class="mui-col-sm-8 mui-col-xs-8 shoppingCart-goodList-right">
+										<div class="mui-ellipsis-2  listFont goodDesc">
+											【三只松鼠_开口松子218g × 2】休闲零食小吃坚果炒货特产东北松子
+										</div>
+										<div class="goodParam">
+											<span>口味：香辣&nbsp;,&nbsp;规格：218g</span>
+											<span class="iconfont icon-address_delete" onclick="alert('删除该商品么？');"></span>
+										</div>
+										<div class="goodMoney">
+											<span>￥35.20</span>
+											<!--默认最小值为0，最大值为99-->
+											<div class="mui-numbox" data-numbox-min='0' data-numbox-max='99'>
+												<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+												<input class="mui-input-numbox" type="number" />
+												<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</a>
+							<a href="javascript:;">
+								<li class="mui-table-view-cell shoppingCart-goodList">
+									<div class="mui-col-sm-1 mui-col-xs-1 shoppingCart-goodList-left">
+										<span class=" iconfont icon-address_radio"></span>
+									</div>
+									<div class="mui-col-sm-3 mui-col-xs-3 shoppingCart-goodList-center">
+										<img src="../../static/img/sp/index-sp2.png" />
+									</div>
+									<div class="mui-col-sm-8 mui-col-xs-8 shoppingCart-goodList-right">
+										<div class="mui-ellipsis-2  listFont goodDesc">
+											【三只松鼠_开口松子218g × 2】休闲零食小吃坚果炒货特产东北松子
+										</div>
+										<div class="goodParam">
+											<span>口味：香辣&nbsp;,&nbsp;规格：218g</span>
+											<span class="iconfont icon-address_delete" onclick="alert('删除该商品么？');"></span>
+										</div>
+										<div class="goodMoney">
+											<span>￥35.20</span>
+											<!--默认最小值为0，最大值为99-->
+											<div class="mui-numbox" data-numbox-min='0' data-numbox-max='99'>
+												<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+												<input class="mui-input-numbox" type="number" />
+												<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+											</div>
+										</div>
+									</div>
+								</li>
+							</a>
+
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
 		<script src="../../static/js/common/mui/mui.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init({
+				pullRefresh: {
+					container: "#shoppingCartScroll", //待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+					down: {
+						style: 'circle',
+						callback: function() {
+							setTimeout(function() {
+								mui('#shoppingCartScroll').pullRefresh().endPulldownToRefresh();
+								mui.toast("下拉加载");
+							}, 1500);
+						}
+					},
+					up: {
+						auto: true,
+						contentrefresh: '正在加载...',
+						contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+						callback: function() {
+							setTimeout(function() {
+								mui('#shoppingCartScroll').pullRefresh().endPullupToRefresh(true);
+								mui.toast("上拉加载");
+							}, 1500);
+						}
+					}
+				}
+			});
+			mui.ready(function() {
+				mui(".mui-scroll-wrapper").scroll(); //启用滚动条
+			});
 		</script>
 	</body>
 

@@ -64,7 +64,7 @@
 /*内容展示*/
 /*下拉刷新加载效果置顶*/
 /*#offCanvasContentScroll .mui-pull-top-pocket{
-	top: 44px !important;
+	top: 0px !important;
 }*/
 
 #offCanvasContentScroll ul{

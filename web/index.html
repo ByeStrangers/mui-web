@@ -21,7 +21,7 @@
 		<header class="mui-bar mui-bar-nav index-bar">
 			<div class="mui-row">
 				<div class="mui-col-xs-3 mui-col-sm-3 address">
-					<a href="#">
+					<a id="currentAddress" href="#">
 						<span class="mui-icon iconfont icon-index-address listFont">&nbsp;上海&nbsp;</span>
 						<span class="mui-icon iconfont icon-index-select-bottom listFont"></span>
 					</a>
@@ -32,7 +32,7 @@
 					</div>
 				</div>
 				<div class="mui-col-xs-2 mui-col-sm-2 cart">
-					<a href="#">
+					<a id="cart" href="system_cart/cart.html">
 						<span class="mui-icon iconfont icon-index-cart listFont">&nbsp;购物车</span>
 					</a>
 				</div>
@@ -48,7 +48,7 @@
 				<span class="mui-icon iconfont icon-index_type"></span>
 				<span class="mui-tab-label">分类</span>
 			</a>
-			<a class="mui-tab-item" href="#tabbar_order">
+			<a class="mui-tab-item" href="system_order/order.html">
 				<span class="mui-icon iconfont icon-index_order"></span>
 				<span class="mui-tab-label">订单</span>
 			</a>
@@ -290,6 +290,16 @@
 
 				//监听底部导航栏调整
 				mui('.mui-bar-tab').on('tap', 'a', function() {
+					var url = this.getAttribute('href');
+					id = this.getAttribute('id');
+					mui.openWindow({
+						id: id,
+						url: url,
+					});
+				})
+				
+				//监听顶部导航栏调整
+				mui('.mui-bar-nav').on('tap', 'a', function() {
 					var url = this.getAttribute('href');
 					id = this.getAttribute('id');
 					mui.openWindow({

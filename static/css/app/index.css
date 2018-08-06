@@ -17,6 +17,15 @@
 	color: white;
 	font-size: 13px;
 }
+/*.index-bar .mui-row .address span:active {
+	color: white;
+	font-size: 13px;
+}
+
+.index-bar .mui-row .address a:active {
+	color: white;
+	font-size: 13px;
+}*/
 
 /*搜索框*/
 .index-bar .mui-row .search .mui-search{

@@ -11,14 +11,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.iconfont {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .icon-index-cart:before { content: "\e602"; }
 
 .icon-delete_friend:before { content: "\e664"; }
@@ -77,6 +69,8 @@
 
 .icon-chatInfo:before { content: "\e61c"; }
 
+.icon-close:before { content: "\e614"; }
+
 .icon-index_shopping:before { content: "\e620"; }
 
 .icon-add_friend:before { content: "\e675"; }
@@ -84,6 +78,8 @@
 .icon-setting:before { content: "\e67b"; }
 
 .icon-billboard:before { content: "\e60e"; }
+
+.icon-phone:before { content: "\e63d"; }
 
 .icon-contacts:before { content: "\e612"; }
 
@@ -111,6 +107,10 @@
 
 .icon-enlarge:before { content: "\e604"; }
 
+.icon-pay_fail:before { content: "\e633"; }
+
+.icon-customer_service:before { content: "\e60d"; }
+
 .icon-integral_setting:before { content: "\e8e5"; }
 
 .icon-address_edit:before { content: "\e8e6"; }
@@ -124,4 +124,3 @@
 .icon-index-select-bottom:before { content: "\eb16"; }
 
 .icon-index_type:before { content: "\e615"; }
-

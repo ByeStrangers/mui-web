@@ -11,7 +11,7 @@
 	width: 22%;
 	font-family: simhei;
 	font-size: medium;
-	background-color: #C7EDCC;
+	/*background-color: #C7EDCC;*/
 }
 
 .mui-input-row{
@@ -23,7 +23,7 @@
 .mui-input-row label~textarea {
 	width: 73%;
 	float: left;
-	background-color: #C7EDCC;
+	/*background-color: #C7EDCC;*/
 }
 
 .mui-checkbox input[type=checkbox],

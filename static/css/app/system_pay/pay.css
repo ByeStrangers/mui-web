@@ -1,0 +1,70 @@
+/*页面背景*/
+
+.pay {
+	background-color: white;
+}
+
+
+/*支付成功*/
+
+.pay div {
+	/*border: 1px solid red;*/
+	height: 200px;
+	width: 100%;
+	margin-top: 70px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.pay div .icon-address_radioChecked {
+	/*border: 1px solid red;*/
+	font-size: 40px;
+	color: #69DBA0;
+	width: 100%;
+	display: block;
+}
+
+.payInfo {
+	/*border: 1px solid red;*/
+	font-size: 16px;
+	font-weight:bold;
+	width: 100%;
+	text-align: center;
+	display: block;
+}
+
+.payStatus{
+	margin-top: 25px;
+}
+.payMoney{
+	margin-top: 10px;
+}
+.payMoney span{
+	color: #EA6F5A;
+}
+.backBtn{
+	margin-top: 10px;
+}
+
+.backBtn a span {
+	/*border: 1px solid red;*/
+	width: 20%;
+	height: 100%;
+	font-size: 14px;
+	font-weight:normal;
+	display: inline-block;
+	background-color: #EA6F5A;
+	color: white;
+}
+
+/*支付失败*/
+.pay div .icon-pay_fail {
+	/*border: 1px solid red;*/
+	font-size: 40px;
+	color: #EA6F5A;/*#FE3C3D*/
+	width: 100%;
+	display: block;
+}
+.cancelBtn{
+	background-color: #C7C7C7 !important;
+} 

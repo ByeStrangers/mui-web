@@ -1,0 +1,223 @@
+/*顶部导航栏*/
+
+.order .mui-slider-progress-bar {
+	width: 20% !important;
+}
+
+
+/*底部工具栏*/
+.navBtn{
+	display: none;
+}
+
+.sumPayBtn {
+	height: 50px;
+	text-align: right;
+}
+
+.sumPayBtn button {
+	margin: 9px 5px;
+	color: #EA6F5A;
+	border-color: #EA6F5A;
+}
+
+/*当前页面按钮点击*/
+.sumPayBtn button:active,.order button:active{
+	background-color: #FFFFFF;
+	color: #EA6F5A;
+}
+
+/*设置上拉/下拉加载背景颜色和字体*/
+.order .mui-pull-top-pocket,.messageNotify .mui-pull-bottom-pocket{
+	/*background-color: #FFFFFF;*/
+	top:0px !important;/*下拉刷新加载效果置顶*/
+}
+.order .mui-pull-caption{
+	color: #B6B6B6;
+}
+.order .mui-pull-bottom-pocket .mui-pull-loading{
+	margin-top: 12px;
+}
+.order .mui-pull-bottom-pocket .mui-pull-caption{
+	margin-top: 15px;
+	color: #B6B6B6;
+}
+.order a{
+	color: black;
+}
+
+/*内容*/
+.orderList{
+	background-color: #EFEFF4;
+}
+
+.orderList .orderInfo{
+	margin-top: 10px;
+	padding: 0px;
+	/*border: 1px solid red;*/
+}
+.shop {
+	/*border: 1px solid red;*/
+	width: 100%;
+}
+
+.shop_title {
+	border-bottom: 1px solid #E3E2E5;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+}
+
+.shop_title .icon-address_radio {
+	height: 100%;
+	color: #D6D6D6;
+	font-size: x-large;
+	display: block;
+	float: left;
+}
+
+.shop_title .shopName {
+	/*border: 1px solid red;*/
+	font-size: 14px;
+	height: 100%;
+	display: block;
+	float: left;
+	padding-left: 5px;
+}
+
+.orderStatus {
+	color: #EA6F5A;
+	margin-right: 5px;
+	float: right;
+}
+.order_goodList{
+	margin: 0px;
+	padding: 0px;
+}
+.order_goodList_img{
+	height: 100px;
+	float: left;
+	padding: 1px;
+}
+.order_goodList_img img {
+	width: 100%;
+	height: 100%;
+}
+.order_goodList_desc{
+	height: 100%;
+	float: left;
+	height: 100px;
+}
+
+
+.order_goodList_desc .goodDesc {
+	/*border: 1px solid red;*/
+	height: 40%;
+	width: 100%;
+	padding: 2px;
+	float: left;
+	font-size: 12px;
+}
+
+.order_goodList_desc .goodParam {
+	/*border: 1px solid red;*/
+	height: 30%;
+	width: 100%;
+	float: left;
+	padding: 5px;
+}
+
+.order_goodList_desc .goodParam span:first-child {
+	/*border: 1px solid red;*/
+	display: block;
+	float: left;
+	color: #919191;
+	font-size: 10px;
+}
+
+.order_goodList_desc .goodMoney {
+	/*border: 1px solid red;*/
+	height: 30%;
+	width: 100%;
+	float: left;
+	padding: 3px;
+}
+
+.order_goodList_desc .goodMoney span:first-child {
+	/*border: 1px solid red;*/
+	height: 100%;
+	width: 90%;
+	display: block;
+	float: left;
+	color: #EA6F5A;
+	font-size: 14px;
+}
+
+.order_goodList_desc .goodMoney span:last-child {
+	/*border: 1px solid red;*/
+	height: 100%;
+	width: 10%;
+	display: block;
+	float: left;
+	color: #ACACB4;
+	padding-right: 6px;
+	font-size: 12px;
+}
+.order_goodFooter{
+	height: 60px;
+	background-color: white;
+}
+
+.order_goodFooter div {
+	/*border: 1px solid red;*/
+	height: 50%;
+}
+
+.order_goodFooter div:first-child {
+	/*border-bottom*/: 1px solid #E3E2E5;
+}
+
+.settlement_goodFooter_msg {
+	height: 100%;
+	width: 19%;
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.order_goodFooter div:first-child input {
+	height: 100%;
+	width: 78%;
+	border: none;
+}
+
+.order_goodFooter_money {
+	height: 100%;
+	display: inline-block;
+	padding-top: 2px;
+	padding-right: 5px;
+	float: right;
+	color: #EA6F5A;
+	/*border: 1px solid red;*/
+}
+
+.order_goodFooter_desc {
+	height: 100%;
+	display: inline-block;
+	text-align: right;
+	padding-top: 2px;
+	float: right;
+	/*border: 1px solid red;*/
+}
+.btnList{
+	text-align: right;
+	/*border: 1px solid red;*/
+}
+.btnList button{
+	height: 100%;
+}
+.btnList button:last-child{
+	border-color: #EA6F5A;
+	color: #EA6F5A;
+}

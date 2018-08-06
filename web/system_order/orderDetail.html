@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../static/css/common/mui/mui.css" rel="stylesheet" />
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：自己样式
+        -->
+		<link href="../../static/css/app/common.css" rel="stylesheet" />
+		<!--<link href="../../static/css/app/system_order/order.css" rel="stylesheet" />-->
+		<link href="../../static/css/app/system_order/orderDetail.css" rel="stylesheet" />
+		<!--<link href="../../static/css/app/system_cart/settlement.css" rel="stylesheet" />-->
+		<!--引入拓展的图标-->
+		<link rel="stylesheet" href="../../static/css/common/icons/iconfont.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title mui-text-left">订单详情</h1>
+		</header>
+		<nav id="navBtn" class="mui-bar mui-bar-tab listFont">
+			<div class="sumPayBtn">
+				<button type="button">合并付款</button>
+				<button type="button">朋友代付</button>
+				<button type="button">付款</button>
+			</div>
+		</nav>
+
+		<div id="settlementScroll" class="mui-content mui-fullscreen mui-scroll-wrapper listFont">
+			<div class="mui-scroll">
+				<!--订单状态-->
+				<div class="orderStatus">
+					<div class="orderStatus_desc">
+						<span>
+							等待买家付款
+						</span>
+						<span>
+							剩20小时32分自动关闭
+						</span>
+					</div>
+				</div>
+				<!--订单地址-->
+				<div class="settlementAddresss">
+					<div class="settlementAddresss_top">
+						<span class="settlementAddresss_top_name">收货人： XXX</span>
+						<span class="settlementAddresss_top_phone">18720645423</span>
+					</div>
+					<div class="settlementAddresss_center">
+						<span class="iconfont icon-index-address"></span>
+						<span class="mui-ellipsis-2 settlementAddresss_center_addr">d安迪大娘家东南部为却为却完全特温柔又吐大大让我惹味如VC的个人特</span>
+					</div>
+				</div>
+
+				<!--内容-->
+				<div class="orderDetail">
+					<!--当前店铺名-->
+					<div class="shop">
+						<a href="#">
+							<div class="shop_title">
+								<span class="shopName">
+								三只松鼠旗舰店
+							</span>
+								<span class="iconfont icon-index-select-right"></span>
+							</div>
+						</a>
+					</div>
+					<!--当前店铺商品列表-->
+					<ul class="mui-table-view listFont">
+						<a href="#">
+							<li class="mui-table-view-cell order_goodList">
+								<div class="mui-col-sm-3 mui-col-xs-3 order_goodList_img">
+									<img src="../../static/img/sp/index-sp2.png" />
+								</div>
+								<div class="mui-col-sm-9 mui-col-xs-9  order_goodList_desc">
+									<div class="mui-ellipsis-2  listFont goodDesc">
+										【三只松鼠_开口松子218g × 2】休闲零食小吃坚果炒货特产东北松子
+									</div>
+									<div class="goodParam">
+										<span>口味：香辣&nbsp;,&nbsp;规格：218g</span>
+									</div>
+									<div class="goodMoney">
+										<span>￥35.20</span>
+										<span>×1</span>
+									</div>
+								</div>
+							</li>
+						</a>
+					</ul>
+					<!--店铺底部留言-->
+					<div class="order_goodFooter">
+						<div class="order_money_detail">
+							<span class="order_goodFooter_money">￥90.40</span>
+							<span class="order_goodFooter_desc">商品总价</span>
+						</div>
+						<div class="order_money_detail">
+							<span class="order_goodFooter_money">￥0.00</span>
+							<span class="order_goodFooter_desc">运费（快递）</span>
+						</div>
+						<div class="order_money_detail">
+							<span class="order_goodFooter_money">￥-20.00</span>
+							<span class="order_goodFooter_desc">店铺优惠</span>
+						</div>
+						<div class="order_money_detail order_totalMoney">
+							<span class="order_goodFooter_money">￥70.40</span>
+							<span class="order_goodFooter_desc">订单总价</span>
+						</div>
+						<div class="order_money">
+							<span class="order_goodFooter_money">￥70.40</span>
+							<span class="order_goodFooter_desc">需付款</span>
+						</div>
+					</div>
+				</div>
+
+				<!--联系卖家-->
+				<div class="contactBtn">
+					<a href="tel:18752035026">
+						<span class="iconfont icon-customer_service">
+							<span class="listFont">联系卖家</span>
+						</span>
+					</a>
+					<a href="tel:18752035026">
+						<span class="iconfont icon-phone">
+							<span class="listFont">拨打电话</span>
+						</span>
+					</a>
+				</div>
+
+				<!--订单号信息-->
+				<div class="orderSeqInfo">
+					<span>
+						订单编号：1564564684981321685
+					</span>
+					<span>
+						支付宝交易号：1564564684981321685418941561
+					</span>
+					<span>
+						创建时间：2018-08-13 09:51:55
+					</span>
+					<span>
+						成交时间：2018-08-13 09:52:55
+					</span>
+				</div>
+				
+			</div>
+		</div>
+
+		<script src="../../static/js/common/mui/mui.js"></script>
+		<script src="../../static/js/common/jquery/jquery-3.3.1.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.ready(function(){
+				//初始化滚动条
+				mui(".mui-scroll-wrapper").scroll();
+			})
+		</script>
+	</body>
+
+</html>

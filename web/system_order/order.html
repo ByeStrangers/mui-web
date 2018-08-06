@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../static/css/common/mui/mui.css" rel="stylesheet" />
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：自己样式
+        -->
+		<link href="../../static/css/app/common.css" rel="stylesheet" />
+		<link href="../../static/css/app/system_order/order.css" rel="stylesheet" />
+		<!--引入拓展的图标-->
+		<link rel="stylesheet" href="../../static/css/common/icons/iconfont.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title mui-text-left">我的订单</h1>
+		</header>
+		<!--通过添加/移除"mui-bar-tab、navBtn"来控制显示/隐藏-->
+		<nav id="navBtn" class="mui-bar listFont navBtn">
+			<div class="sumPayBtn">
+				<button type="button">合并付款</button>
+			</div>
+		</nav>
+
+		<div class="mui-content listFont order">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1mobile">
+						全部
+					</a>
+					<a class="mui-control-item" href="#item2mobile">
+						待付款
+					</a>
+					<a class="mui-control-item" href="#item3mobile">
+						待发货
+					</a>
+					<a class="mui-control-item" href="#item4mobile">
+						待收货
+					</a>
+					<a class="mui-control-item" href="#item5mobile">
+						待评价
+					</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-2"></div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view orderList ">
+									<!--店铺&商品列表-->
+									<li class="mui-table-view-cell  orderInfo">
+										<!--当前店铺名-->
+										<div class="shop">
+											<a href="javascript:;">
+												<div class="shop_title">
+													<span class="mui-col-sm-1 mui-col-xs-1 iconfont icon-address_radio"></span>
+													<span class="shopName">
+													三只松鼠旗舰店
+												</span>
+													<span class="iconfont icon-index-select-right">
+												</span>
+													<span class="orderStatus">
+													等待买家付款
+												</span>
+												</div>
+											</a>
+										</div>
+										<!--当前店铺商品列表-->
+										<ul class="mui-table-view listFont">
+											<a href="orderDetail.html">
+												<li class="mui-table-view-cell order_goodList">
+													<div class="mui-col-sm-3 mui-col-xs-3 order_goodList_img">
+														<img src="../../static/img/sp/index-sp2.png" />
+													</div>
+													<div class="mui-col-sm-9 mui-col-xs-9  order_goodList_desc">
+														<div class="mui-ellipsis-2  listFont goodDesc">
+															【三只松鼠_开口松子218g × 2】休闲零食小吃坚果炒货特产东北松子
+														</div>
+														<div class="goodParam">
+															<span>口味：香辣&nbsp;,&nbsp;规格：218g</span>
+														</div>
+														<div class="goodMoney">
+															<span>￥35.20</span>
+															<span>×1</span>
+														</div>
+													</div>
+												</li>
+											</a>
+										</ul>
+										<!--店铺底部留言-->
+										<div class="order_goodFooter">
+											<div>
+												<span class="order_goodFooter_money">70.40</span>
+												<span class="order_goodFooter_desc">共2件商品&nbsp;&nbsp;合计：</span>
+											</div>
+											<div class="btnList">
+												<button type="button">取消订单</button>
+												<button type="button">朋友代付</button>
+												<button type="button">付款</button>
+											</div>
+										</div>
+									</li>
+									<!--店铺&商品列表-->
+									<li class="mui-table-view-cell  orderInfo">
+										<!--当前店铺名-->
+										<div class="shop">
+											<a href="javascript:;">
+												<div class="shop_title">
+													<span class="mui-col-sm-1 mui-col-xs-1 iconfont icon-address_radio"></span>
+													<span class="shopName">
+													三只松鼠旗舰店
+												</span>
+													<span class="iconfont icon-index-select-right">
+												</span>
+													<span class="orderStatus">
+													等待买家付款
+												</span>
+												</div>
+											</a>
+										</div>
+										<!--当前店铺商品列表-->
+										<ul class="mui-table-view listFont">
+											<a href="orderDetail.html">
+												<li class="mui-table-view-cell order_goodList">
+													<div class="mui-col-sm-3 mui-col-xs-3 order_goodList_img">
+														<img src="../../static/img/sp/index-sp2.png" />
+													</div>
+													<div class="mui-col-sm-9 mui-col-xs-9  order_goodList_desc">
+														<div class="mui-ellipsis-2  listFont goodDesc">
+															【三只松鼠_开口松子218g × 2】休闲零食小吃坚果炒货特产东北松子
+														</div>
+														<div class="goodParam">
+															<span>口味：香辣&nbsp;,&nbsp;规格：218g</span>
+														</div>
+														<div class="goodMoney">
+															<span>￥35.20</span>
+															<span>×1</span>
+														</div>
+													</div>
+												</li>
+											</a>
+										</ul>
+										<!--店铺底部留言-->
+										<div class="order_goodFooter">
+											<div>
+												<span class="order_goodFooter_money">70.40</span>
+												<span class="order_goodFooter_desc">共2件商品&nbsp;&nbsp;合计：</span>
+											</div>
+											<div class="btnList">
+												<button type="button" style="height: 100%;">取消订单</button>
+												<button type="button" style="height: 100%;">朋友代付</button>
+												<button type="button" style="height: 100%;">付款</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+
+							</div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+
+							</div>
+						</div>
+					</div>
+					<div id="item4mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+
+							</div>
+						</div>
+					</div>
+					<div id="item5mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../../static/js/common/mui/mui.js"></script>
+		<script src="../../static/js/common/jquery/jquery-3.3.1.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.ready(function() {
+				mui(".mui-scroll-wrapper").scroll({
+					//bounce: false,//滚动条是否有弹力默认是true
+					//indicators: false, //是否显示滚动条,默认是true
+				});
+				//循环初始化所有下拉刷新，上拉加载。
+				$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+					var scrollId = pullRefreshEl.parentNode.getAttribute("id");
+					//alert(scrollId)
+					mui("#" + scrollId).pullRefresh({
+						down: {
+							style: 'circle',
+							callback: function() {
+								setTimeout(function() {
+									mui("#" + scrollId).pullRefresh().endPulldownToRefresh();
+									mui.toast(scrollId + "下拉加载");
+								}, 1500);
+							}
+						},
+						up: {
+							auto: true,
+							contentrefresh: '正在加载...',
+							contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+							callback: function() {
+								setTimeout(function() {
+									mui("#" + scrollId).pullRefresh().endPullupToRefresh(true);
+									mui.toast(scrollId + "上拉加载");
+								}, 1500);
+							}
+						}
+					});
+				});
+				//单选按钮添加点击事件
+				$.each(document.querySelectorAll('.icon-address_radio'), function(index, ele) {
+					ele.addEventListener('tap', function() {
+						//将当前单选按钮选中
+						if($(ele).hasClass("icon-address_radioChecked")) { //如果选中则取消
+							$(ele).removeClass("icon-address_radioChecked");
+						} else {
+							$(ele).addClass("icon-address_radioChecked");
+						}
+						//如果当前界面没有选中的单选按钮，则底部“合并付款”按钮不显示
+						if($(".icon-address_radioChecked").length > 0) {
+							$("#navBtn").addClass("mui-bar-tab");
+							$("#navBtn").removeClass("navBtn");
+						} else {
+							$("#navBtn").addClass("navBtn");
+							$("#navBtn").removeClass("mui-bar-tab");
+						}
+					})
+				})
+			});
+		</script>
+	</body>
+
+</html>

@@ -27,9 +27,11 @@
 				<span class="settlementCloumn_center_money">￥240.20</span>
 				<span class="settlementCloumn_center_desc">商品合计：</span>
 			</div>
-			<div class="settlementCloumn_right">
-				<span class="settlementCloumn_right_btn">提交订单</span>
-			</div>
+			<a href="#pay">
+				<div class="settlementCloumn_right">
+					<span class="settlementCloumn_right_btn">提交订单</span>
+				</div>
+			</a>
 		</nav>
 
 		<!--
@@ -38,7 +40,7 @@
         	描述：内容区
         -->
 		<div id="settlementScroll" class="mui-content mui-fullscreen mui-scroll-wrapper listFont">
-			<div  class="mui-scroll">
+			<div class="mui-scroll">
 				<div class="settlementAddresss">
 					<div class="settlementAddresss_top">
 						<span class="settlementAddresss_top_name">收货人： XXX</span>
@@ -105,7 +107,7 @@
 						<div class="settlement_goodFooter">
 							<div>
 								<span class="settlement_goodFooter_msg">买家留言: </span>
-								<input class="listFont" type="text" placeholder="选填:填写内容已和卖家协商确认"/>
+								<input class="listFont" type="text" placeholder="选填:填写内容已和卖家协商确认" />
 							</div>
 							<div>
 								<span class="settlement_goodFooter_money">70.40</span>
@@ -164,7 +166,7 @@
 						<div class="settlement_goodFooter">
 							<div>
 								<span class="settlement_goodFooter_msg">买家留言: </span>
-								<input class="listFont" type="text" placeholder="选填:填写内容已和卖家协商确认"/>
+								<input class="listFont" type="text" placeholder="选填:填写内容已和卖家协商确认" />
 							</div>
 							<div>
 								<span class="settlement_goodFooter_money">70.40</span>
@@ -176,33 +178,65 @@
 			</div>
 		</div>
 
+		<!--底部弹出支付界面-->
+		<div id="pay" class="mui-popover mui-popover-action mui-popover-bottom listFont" style="border:1px solid red;height: 60%;background-color: white;">
+			<div style="border:1px solid red;height: 40px;text-align: center;">
+				<span class="iconfont icon-close" style="border: 1px solid red;float:left;margin-top: 8px;font-size: 22px;color: #8F8F8F;"></span>
+				<span class="listFont" style="border: 1px solid red;display: inline-block;margin-top: 8px;font-size: 18px;">
+					确认付款
+				</span>
+			</div>
+			<div class="listFont" style="border:1px solid red;height: 80px;line-height:80px;text-align: center;font-size: 20px;">
+				<span>￥128.21</span>
+			</div>
+			<ul class="mui-table-view listFont" style="margin: 0px;padding: 0px;background-color: white;text-align: left;font-size: 14px;">
+			        <li class="mui-table-view-cell">
+			           <span style="border:1px solid red;display: inline-block;float: left;color: #8F8F8F;">
+			           	支付宝账号
+			           </span>
+			            <span style="border:1px solid red;display: inline-block;float: right;color: black;">
+			           	187XXXXXX35
+			           </span>
+			        </li>
+			        <li class="mui-table-view-cell">
+			            <a class="mui-navigate-right" style="color: #8F8F8F;">
+			                 	付款方式
+			                 	<span class="mui-badge mui-badge-inverted" style="color: black;">账户余额</span>
+			            </a>
+			        </li>
+			    </ul>
+			<div style="border:1px solid red;height: 40px;line-height: 40px;width:100%;text-align: center;position: absolute;bottom: 5px;">
+				<button type="button" style="width: 95%;height: 100%;font-size: 16px;background-color: #EA6F5A;color: white;">立即付款</button>
+			</div>
+		</div>
+
 		<script src="../../static/js/common/mui/mui.js"></script>
 		<script type="text/javascript">
-//			mui.init({
-//				pullRefresh: {
-//					container: "#settlementScroll", //待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
-//					down: {
-//						style: 'circle',
-//						callback: function() {
-//							setTimeout(function() {
-//								mui('#settlementScroll').pullRefresh().endPulldownToRefresh();
-//								mui.toast("下拉加载");
-//							}, 1500);
-//						}
-//					},
-//					up: {
-//						auto: true,
-//						contentrefresh: '正在加载...',
-//						contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
-//						callback: function() {
-//							setTimeout(function() {
-//								mui('#settlementScroll').pullRefresh().endPullupToRefresh(true);
-//								mui.toast("上拉加载");
-//							}, 1500);
-//						}
-//					}
-//				}
-//			});
+			//			mui.init({
+			//				pullRefresh: {
+			//					container: "#settlementScroll", //待刷新区域标识，querySelector能定位的css选择器均可，比如：id、.class等
+			//					down: {
+			//						style: 'circle',
+			//						callback: function() {
+			//							setTimeout(function() {
+			//								mui('#settlementScroll').pullRefresh().endPulldownToRefresh();
+			//								mui.toast("下拉加载");
+			//							}, 1500);
+			//						}
+			//					},
+			//					up: {
+			//						auto: true,
+			//						contentrefresh: '正在加载...',
+			//						contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+			//						callback: function() {
+			//							setTimeout(function() {
+			//								mui('#settlementScroll').pullRefresh().endPullupToRefresh(true);
+			//								mui.toast("上拉加载");
+			//							}, 1500);
+			//						}
+			//					}
+			//				}
+			//			});
 			mui.ready(function() {
 				mui(".mui-scroll-wrapper").scroll();
 			})

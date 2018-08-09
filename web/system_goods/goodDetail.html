@@ -1,0 +1,447 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../static/css/common/mui/mui.css" rel="stylesheet" />
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：自己样式
+        -->
+		<link href="../../static/css/app/common.css" rel="stylesheet" charset="UTF-8" />
+		<link href="../../static/css/app/system_goods/goodDetail.css" rel="stylesheet" charset="UTF-8" />
+		<!--引入拓展的图标-->
+		<link rel="stylesheet" href="../../static/css/common/icons/iconfont.css" />
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-transparent" data-scrollby=".mui-scroll-wrapper">
+			<div class="mui-row">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+				<a id="cart" href="system_cart/cart.html">
+					<span class="mui-icon iconfont icon-index-cart listFont headerCart">&nbsp;购物车</span>
+				</a>
+			</div>
+		</header>
+		<nav class="mui-bar mui-bar-tab listFont goodsNav">
+			<div class="goodsNav_icons">
+				<a href="#">
+					<div class="goodsNav_icons_kefu">
+						<span class="iconfont icon-kefuwangwang"></span>
+						<span>客服</span>
+					</div>
+				</a>
+				<a href="#">
+					<div class="goodsNav_icons_collect">
+						<span class="iconfont icon-star_null"></span>
+						<span>收藏</span>
+					</div>
+				</a>
+			</div>
+			<div class="goodsNav_btns">
+				<a href="#">
+					<div class="addCart">加入购物车</div>
+				</a>
+				<a href="#">
+					<div class="immBuy">立即购买</div>
+				</a>
+			</div>
+		</nav>
+
+		<div class="mui-content mui-fullscreen mui-scroll-wrapper listFont">
+			<div class="mui-scroll">
+				<!--轮播图-->
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group ">
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../../static/img/banner2/banner01.jpg">
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../../static/img/banner2/banner02.jpg">
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="../../static/img/banner2/banner03.jpg">
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator "></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+
+				<!--商品描述-->
+				<div class="goodDetail">
+					<div class="goodDetail_title">
+						<span class="mui-col-xs-10 mui-col-sm-10 goodDetail_title_desc mui-ellipsis-2">
+							笔记本电脑做桌床上用书桌简约懒人桌大学生宿舍多功能散热可折叠写字小桌子家用吃饭儿童简易学习迷你小桌板
+						</span>
+						<div class="mui-col-xs-2 mui-col-sm-2">
+							<span class="iconfont icon-share"></span>
+							<span>分享</span>
+						</div>
+					</div>
+					<div class="goodDetail_money">
+						<span class="mui-col-xs-12 mui-col-sm-12">
+							￥38.99-66.89
+						</span>
+					</div>
+					<div class="goodDetail_bottom">
+						<span class="mui-col-xs-4 mui-col-sm-4 mui-ellipsis goodDetail_express">
+							快递：0.00
+						</span>
+						<span class="mui-col-xs-4 mui-col-sm-4 mui-ellipsis goodDetail_sell">
+							月销10000笔
+						</span>
+						<span class="mui-col-xs-4 mui-col-sm-4 mui-ellipsis goodDetail_addr">
+							广东 深圳
+						</span>
+					</div>
+				</div>
+
+				<!--选择类别-->
+				<ul class="mui-table-view">
+					<li id="buyParamLi" class="mui-table-view-cell">
+						<a id="buyParamTitle" href="javascript:;" class="mui-navigate-right">
+							请选择颜色分类
+						</a>
+					</li>
+					<li id="productParamLi" class="mui-table-view-cell">
+						<a id="productParamHref" href="#productParam" class="mui-navigate-right">
+							产品参数
+						</a>
+					</li>
+				</ul>
+
+				<!--评价:显示一条-->
+				<ul class="mui-table-view" style="margin-top: 10px;">
+					<li class="mui-table-view-cell">
+						<a href="evaluateList.html" class="mui-navigate-right">
+							评价
+							<span class="mui-badge mui-badge-inverted">共52条评价</span>
+						</a>
+					</li>
+				</ul>
+				<div class="listFont goods_evaluate">
+					<div class="goods_evaluate_userInfo">
+						<span class="goods_evaluate_userInfo_userName">Tom</span>
+						<span class="goods_evaluate_userInfo_star">
+							<span class="iconfont icon-star_full starChecked"></span>
+						<span class="iconfont icon-star_full starChecked"></span>
+						<span class="iconfont icon-star_full starUnchecked"></span>
+						<span class="iconfont icon-star_full starUnchecked"></span>
+						<span class="iconfont icon-star_full starUnchecked"></span>
+						</span>
+						<span class="goods_evaluate_time">2018-08-07</span>
+					</div>
+					<div class="goods_evaluate_content">
+						大的热望奇热网人忒热让其他人try任何官方是的方式他特瑞特全球特甜群体 特权
+					</div>
+					<div class="goods_evaluate_param">
+						颜色：橘红色 &nbsp;规格：M码
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--选择颜色分类1-->
+		<div id="chooseParam1" class="mui-popover mui-popover-action mui-popover-bottom listFont chooseParam">
+			<div class="chooseParam_title">
+				<div class="chooseParam_img">
+					<img src="../../static/img/avatar_yunwei.png" />
+				</div>
+				<div class="chooseParam_tip">
+					<div class="mui-ellipsis chooseParam_tip_money">
+						￥1000-2000
+					</div>
+					<div class="mui-ellipsis chooseParam_tip_goodsCount">
+						库存100件
+					</div>
+					<div class="mui-ellipsis chooseParam_tip_paramTitle">
+						请选择颜色分类 等等（提示内容看下面需要选择的参数）
+					</div>
+				</div>
+				<div class="chooseParam_closeBtn">
+					<span id="chooseParam_closeBtn1" class="iconfont icon-popover_close"></span>
+				</div>
+			</div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--选择参数-->
+					<ul class="chooseParamList">
+						<li class="chooseParamList_li">
+							<div>
+								<div class="chooseParamList_liTitle">
+									颜色分类
+								</div>
+								<div class="chooseParamList_liContent">
+									<span class="chooseParamList_liContent_active chooseParamList_liContent_checked">白色 身高170cm</span>
+									<span class="chooseParamList_liContent_unActive">白色 身高175cm</span>
+									<span class="chooseParamList_liContent_active">白色 身高180cm</span>
+									<span class="chooseParamList_liContent_active">红色 身高170cm</span>
+								</div>
+							</div>
+						</li>
+						<li class="chooseParamList_li">
+							<div>
+								<div class="chooseParamList_liTitle">
+									套餐
+								</div>
+								<div class="chooseParamList_liContent">
+									<span class="chooseParamList_liContent_active">官方标配</span>
+									<span class="chooseParamList_liContent_unActive">套餐一</span>
+									<span class="chooseParamList_liContent_active">套餐二</span>
+									<span class="chooseParamList_liContent_active">套餐三</span>
+								</div>
+							</div>
+						</li>
+						<li class="chooseParamList_buyLi">
+							<div>
+								<span class="chooseParamList_buyLi_title">
+									购买数量
+								</span>
+								<!--默认最小值为1，最大值为99-->
+								<div class="mui-numbox" data-numbox-min='1' data-numbox-max='99'>
+									<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+									<input class="mui-input-numbox" type="number" />
+									<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--按钮-->
+			<div class="pay_btn">
+				<div id="liClick">
+					<a href="#">
+						<span class="addCart">加入购物车</span>
+					</a>
+					<a href="#">
+						<span class="immBuy">立即购买</span>
+					</a>
+				</div>
+				<div id="btnClick" style="display: none;">
+					<a href="#">
+						<span class="determineBtn">确 定</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--选择产品参数-->
+		<div id="productParam" class="mui-popover mui-popover-action mui-popover-bottom listFont productParam">
+			<div class="productParam_title">
+				产品参数
+			</div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<!--选择参数-->
+					<ul class="productParamList">
+						<li class="productParamList_li">
+							<div>
+								<div class="productParamList_li_title">
+									品牌
+								</div>
+								<div class="productParamList_li_content">
+									苹果
+								</div>
+							</div>
+						</li>
+						<li class="productParamList_li">
+							<div>
+								<div class="productParamList_li_title">
+									型号
+								</div>
+								<div class="productParamList_li_content">
+									iphone x
+								</div>
+							</div>
+						</li>
+						<li class="productParamList_li">
+							<div>
+								<div class="productParamList_li_title">
+									颜色分色分类
+								</div>
+								<div class="productParamList_li_content">
+									颜色分类颜颜色分类颜颜色分类颜颜色分类颜颜色分类颜颜色分类颜颜色分类颜颜色分类颜颜色分类颜颜色分类颜
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--按钮-->
+			<div class="pay_btn">
+				<a href="#">
+					<span class="completeBtn">完成</span>
+				</a>
+			</div>
+		</div>
+
+		<script src="../../static/js/common/mui/mui.js" charset="UTF-8"></script>
+		<script src="../../static/js/common/jquery/jquery-3.3.1.js"></script>
+		<script src="../../static/js/common/swiper/swiper.js"></script>
+		<script src="../../static/js/common/template.js"></script>
+		<script type="text/javascript">
+			var defaultBuyParamTitleValue; //记录进入界面时，选择类别默认值
+			var popoverId;//记录弹出框ID
+
+			mui.init()
+			mui.ready(function() {
+				mui(".mui-scroll-wrapper").scroll({
+					indicators: false, //是否显示滚动条
+					bounce: false //是否启用回弹
+				});
+
+				//记录类别默认值
+				defaultBuyParamTitleValue = $("#buyParamTitle").html();
+
+				//弹出框按钮展示设置,参数：是否显示确定按钮（当直接点击“请选择颜色分类”不展示确定按钮），操作类型（当只有确定按钮是传入）
+				function settingPopoverBtn(isShowOK,opType){
+					if(isShowOK){
+						$("#liClick").css("display","none");
+						$("#btnClick").css("display","block");
+						if(opType){//有值
+							$("#btnClick span").data("opType",opType);
+						}
+					}
+					else{
+						$("#liClick").css("display","block");
+						$("#btnClick").css("display","none");
+					}
+				}
+				
+				//选择分类添加点击事件
+				$("#buyParamLi").click(function() {
+					popoverId = "#chooseParam1";
+					//弹出框“确定”按钮隐藏，“加入购物车、立即购买”按钮显示
+					settingPopoverBtn(false);
+					mui(popoverId).popover('toggle');
+				});
+				
+				//产品参数添加点击事件
+				$("#productParamLi").click(function() {
+					popoverId = "#productParam";
+					mui(popoverId).popover('toggle');
+				});
+
+				//弹出框添加点击事件
+				mui(".chooseParam_closeBtn").on('tap', '.icon-popover_close', function() {
+					//传入toggle参数，用户无需关心当前是显示还是隐藏状态，mui会自动识别处理；
+					mui('#chooseParam1').popover('toggle');
+					choseParamFun($('#chooseParam1')); //参数为弹出框元素
+				});
+
+				//弹出框参数选项添加点击事件（每种类别栏目只能单选）
+				mui(".chooseParamList_liContent").on('tap', ".chooseParamList_liContent_active", function() {
+					//获取当前类别栏目下所有可点击类别
+					var notes = $(this).parent().find(".chooseParamList_liContent_active");
+					if($(this).hasClass("chooseParamList_liContent_checked")) { //如果已经是选中，则标记为未选中
+						$(this).removeClass("chooseParamList_liContent_checked");
+					} else {
+						//选中之前先把该栏目下所有可选类别选中状态移除，然后再选中，因为只能单选
+						for(var i = 0; i < notes.length; i++) { //先移除所有选中效果
+							$(notes[i]).removeClass("chooseParamList_liContent_checked");
+						}
+						$(this).addClass("chooseParamList_liContent_checked");
+					}
+				});
+
+				//弹出框遮罩层点击事件,由于遮罩层在body下，所以用该方法绑定，使用jquery方法：$("body .mui-backdrop").click()无效
+				mui("body").on('tap', '.mui-backdrop', function() {
+					if(popoverId != "#productParam") {
+						//获取当前的弹出菜单（chooseParam1-选择颜色分类1、productParam-选择产品参数）
+						var currentPopover = $(popoverId);
+						choseParamFun(currentPopover);
+					}
+				})
+				//类别参数处理函数，参数：弹出框元素
+				function choseParamFun(currentPopover) {
+					//获取当前需要选择的参数元素
+					var liNotes = $(currentPopover).find(".chooseParamList_li");
+					//获取当前已选择的参数元素
+					var paramCheckedNotes = $(currentPopover).find(".chooseParamList_liContent_checked");
+					//当两个元素个数相等时，才将界面"请选择颜色分类"栏目修改内容，否则默认展示
+					if(liNotes.length > 0 && liNotes.length == paramCheckedNotes.length) {
+						//将选中 的参数生成input标签记录在"请选择颜色分类"li标签栏目下，当点击界面地下按钮时，
+						//通过input个数与参数类别个数判断是否相等来决定是否弹出选择参数菜单框
+						var buyParamTitleValue = "已选择：";
+						//先删除li下所有的隐藏域
+						$("#buyParamLi input").remove("input[type='hidden']"); //将隐藏域全部删除
+						for(var i = (paramCheckedNotes.length - 1); i >= 0; i--) {
+							buyParamTitleValue += "'" + $(paramCheckedNotes[i]).html() + "'&nbsp;";
+							//buyParamLi buyParamTitle
+							$("#buyParamLi").append("<input type='hidden' name='buyParam' value='" + $(paramCheckedNotes[i]).html() + "' />");
+						}
+						$("#buyParamTitle").html(buyParamTitleValue);
+					} else { //恢复默认
+						$("#buyParamTitle").html(defaultBuyParamTitleValue);
+						$("#buyParamLi input").remove("input[type='hidden']"); //将隐藏域全部删除
+					}
+				}
+
+				//页面底部“加入购物车”和“立即购买”按钮事件，
+				mui(".goodsNav_btns").on('tap', '.addCart,.immBuy', function() {
+					////获取操作类型
+					var opType = $(this).html();
+					//判断是否已经选完分类，选完则无需弹出参数选择框
+					//获取当前需要选择的参数元素
+					var liNotes = $("#chooseParam1").find(".chooseParamList_li");
+					//获取当前已选择的参数元素
+					var paramCheckedNotes = $("#buyParamLi").find("input[type='hidden']");
+					if(!(paramCheckedNotes.length > 0 && liNotes.length == paramCheckedNotes.length)) {
+						popoverId = "#chooseParam1";
+						//弹出框“确定”按钮显示，“加入购物车、立即购买”按钮隐藏
+						settingPopoverBtn(true,opType);
+						mui(popoverId).popover('toggle');
+					} else {
+						if("加入购物车" == opType) {
+							alert("加入购物车操作");
+						} else {
+							alert("立即购买操作");
+						}
+					}
+				});
+				
+				//弹出框按钮事件
+				mui("#chooseParam1 .pay_btn").on('tap', '.addCart,.immBuy,.determineBtn', function() {
+					//判断是否已经选完分类，选完则无需弹出参数选择框
+					//获取当前需要选择的参数元素
+					var liNotes = $("#chooseParam1").find(".chooseParamList_li");
+					//获取当前已选择的参数元素
+					var paramCheckedNotes = $("#chooseParam1").find(".chooseParamList_liContent_checked");
+					if(paramCheckedNotes.length > 0 && liNotes.length == paramCheckedNotes.length) {
+						//获取操作类型
+						var opType = $(this).html();
+						if("确 定" == opType){
+							opType = $(this).data("opType");
+						}
+						if("加入购物车" == opType) {
+							alert("加入购物车操作");
+						} else {
+							alert("立即购买操作");
+						}
+					} else {
+						mui.toast("请选择商品属性");
+					}
+				});
+
+			});
+		</script>
+	</body>
+
+</html>

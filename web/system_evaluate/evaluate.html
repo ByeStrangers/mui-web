@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户评价</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../static/css/common/mui/mui.css" rel="stylesheet" />
+		<!--
+        	作者：offline
+        	时间：2018-07-24
+        	描述：自己样式
+        -->
+		<link href="../../static/css/app/common.css" rel="stylesheet" charset="UTF-8" />
+		<link href="../../static/css/app/system_evaluate/evaluate.css" rel="stylesheet" charset="UTF-8" />
+		<!--引入拓展的图标-->
+		<link rel="stylesheet" href="../../static/css/common/icons/iconfont.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">评价</h1>
+		</header>
+
+		<div class="mui-content mui-fullscreen listFont">
+			<!--五星好评-->
+			<div class="evaluateHeader">
+				<div class="evaluateImg">
+					<img src="../../static/img/avatar_yunwei.png" />
+				</div>
+				<div class="evaluateDesc">
+					<div>评分</div>
+					<!--
+                    	描述：好评星星数量，默认0，最多5（1-非常差，2-差，3-一般，4-好，5-非常好）
+                    -->
+					<div class="evaluateStar">
+						<span class="goods_evaluate_userInfo_star">
+							<span data-seq="0" class="iconfont icon-star_full starUnchecked starEvaluate"></span>
+						<span data-seq="1" class="iconfont icon-star_full starUnchecked starEvaluate"></span>
+						<span data-seq="2" class="iconfont icon-star_full starUnchecked starEvaluate"></span>
+						<span data-seq="3" class="iconfont icon-star_full starUnchecked starEvaluate"></span>
+						<span data-seq="4" class="iconfont icon-star_full starUnchecked starEvaluate"></span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<!--好评内容-->
+			<div class="listFont evaluateContent">
+				<div>
+					<textarea id="evaluateContent" placeholder="写下购买体会和感受来帮助其它小伙伴..."></textarea>
+				</div>
+				<div class="evaluateFontCount">0/200</div>
+			</div>
+
+			<!--提交按钮-->
+			<div class="listFont evaluateBtn">
+				<button id='submitBtn' class="mui-btn mui-btn-block submitBtn">提 交</button>
+			</div>
+
+		</div>
+
+		<script src="../../static/js/common/mui/mui.js" charset="UTF-8"></script>
+		<script src="../../static/js/common/jquery/jquery-3.3.1.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.ready(function() {
+				//给星星评分绑定点击事件
+				//好评星星数量，默认0，最多5（1-非常差，2-差，3-一般，4-好，5-非常好）
+				$(".starEvaluate").click(function(index, ele) {
+					var currentSeq = $(this).data("seq"); //获取当前点击的星星位置
+					var starNote = $(".starEvaluate"); //获取所有星星
+					for(var i = 0; i < starNote.length; i++) {
+						if(i <= currentSeq) { //小于等于当前星星的标记选中
+							if($(starNote[i]).hasClass("starUnchecked")) {
+								$(starNote[i]).removeClass("starUnchecked");
+								$(starNote[i]).addClass("starChecked");
+							}
+						} else { //取消选择
+							if($(starNote[i]).hasClass("starChecked")) {
+								$(starNote[i]).removeClass("starChecked");
+								$(starNote[i]).addClass("starUnchecked");
+							}
+						}
+					}
+					alert("当前选中：" + $(".starChecked").length + " 个星星");
+				})
+				//评价字数控制
+				$("#evaluateContent").bind('input propertychange', function() {
+					var len = $(this).val().length;
+					if(len > 200) {
+						mui.toast("超出字符数上限");
+					} else {
+						$(".evaluateFontCount").html(len + "/200");
+					}
+				});
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,233 @@
+/*顶部导航栏*/
+
+.evaluateList .mui-slider-progress-bar {
+	width: 25% !important;
+}
+
+.evaluateColumn {
+	/*border: 0px solid red;*/
+	font-size: 14px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.evaluateColumnName {
+	/*border: 0px solid red;*/
+	font-size: 14px;
+	display: block;
+	width: 100%;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	padding-top: 5px;
+}
+
+.evaluateCount {
+	/*border: 0px solid red;*/
+	font-size: 12px;
+	display: block;
+	width: 100%;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+}
+
+/*设置页面中间内容距离提底高度 = 底部导航栏高度，默认50px，由于我设置了底部导航高度为45px，所以此处设置为45px*/
+.evaluateCountList{
+	bottom: 45px !important;
+}
+
+
+/*设置上拉/下拉加载背景颜色和字体*/
+
+.evaluateList .mui-pull-top-pocket,
+.messageNotify .mui-pull-bottom-pocket {
+	/*background-color: #FFFFFF;*/
+	top: 0px !important;
+	/*下拉刷新加载效果置顶*/
+}
+
+.evaluateList .mui-pull-caption {
+	color: #B6B6B6;
+}
+
+.evaluateList .mui-pull-bottom-pocket .mui-pull-loading {
+	/*margin-top: 12px;*/
+}
+
+.evaluateList .mui-pull-bottom-pocket .mui-pull-caption {
+	margin-top: 15px;
+	color: #B6B6B6;
+}
+
+
+/*底部导航栏*/
+
+.goodsNav {
+	height: 45px !important;
+}
+
+.goodsNav_icons {
+	/*border: 1px solid red;*/
+	width: 40%;
+	height: 45px;
+	line-height: 45px;
+	float: left;
+}
+
+.goodsNav_icons a {
+	color: #A2A2A2;
+}
+
+.goodsNav_icons_kefu,
+.goodsNav_icons_collect {
+	/*border: 1px solid red;*/
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+.goodsNav_icons_kefu .icon-kefuwangwang {
+	/*border: 1px solid red;*/
+	font-size: 25px;
+	height: 25px;
+	line-height: 25px;
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.goodsNav_icons_kefu span:last-child {
+	/*border: 1px solid red;*/
+	font-size: 11px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.goodsNav_icons_collect .icon-star_null {
+	/*border: 1px solid red;*/
+	font-size: 20px;
+	height: 25px;
+	line-height: 25px;
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.goodsNav_icons_collect span:last-child {
+	/*border: 1px solid red;*/
+	font-size: 11px;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.goodsNav_btns {
+	/*border: 1px solid red;*/
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+
+.goodsNav_btns div {
+	/*border: 1px solid red;*/
+	height: 45px;
+	line-height: 45px;
+	width: 50%;
+	float: left;
+	text-align: center;
+	color: #FFF5EE;
+}
+
+.addCart {
+	background: linear-gradient(to right, #FFCB00, #FF8902);
+}
+
+.immBuy {
+	background: linear-gradient(to right, #FF7700, #FF4A01);
+}
+
+
+
+/*评价*/
+
+.goods_evaluate {
+	/*border: 1px solid red;*/
+	width: 100%;
+	background-color: white;
+}
+
+.goods_evaluate_userInfo {
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 5px;
+}
+
+.goods_evaluate_userInfo_userName {
+	/*border: 1px solid red;*/
+	display: block;
+	float: left;
+	height: 100%;
+	font-size: 14px;
+	color: #757575;
+}
+
+.goods_evaluate_userInfo_star {
+	/*border: 1px solid red;*/
+	display: block;
+	float: left;
+	height: 100%;
+	margin-left: 10px;
+}
+
+.starChecked {
+	font-size: 11px !important;
+	color: #FF7301;
+}
+
+.starUnchecked {
+	font-size: 11px !important;
+	color: #B5B5B5;
+}
+
+.goods_evaluate_time {
+	/*border: 1px solid red;*/
+	display: block;
+	float: right;
+	height: 100%;
+	font-size: 12px;
+	color: #B5B5B5;
+	margin-right: 10px;
+}
+
+.goods_evaluate_content {
+	/*border: 1px solid red;*/
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 10px;
+	font-size: 14px;
+	color: #757575;
+}
+
+.goods_evaluate_param {
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #B5B5B5;
+	padding-left: 5px;
+}

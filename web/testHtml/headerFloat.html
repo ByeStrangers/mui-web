@@ -23,7 +23,8 @@
 				position: fixed;
 				top: 0px;
 			}
-			.contentCls{
+			
+			.contentCls {
 				z-index: -1;
 			}
 		</style>
@@ -39,13 +40,30 @@
 					</div>
 					<div id="header" style="width: 100%;height: 50px;background-color:#CCCCCC;border: 1px solid yellow;"></div>
 				</div>
-				<div style="width: 100%;height: 700px;border: 3px solid yellow"></div>
+
+				<div id="example" style="width: 100%;height: 700px;border: 3px solid yellow">
+
+				</div>
+				<script type="text/html" id="templateExample">
+					这是一个{{title}}例子
+					<ul class="mui-table-view">
+						{{each rows as v i }}
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								{{v.name}}
+							</a>
+						</li>
+						{{/each}}
+					</ul>
+				</script>
+
 				<div style="width: 100%;height: 700px;border: 3px solid darkorange"></div>
 			</div>
 		</div>
 
 		<script src="../../static/js/common/mui/mui.js"></script>
 		<script type="text/javascript" src="../../static/js/common/jquery/jquery-3.3.1.js"></script>
+		<script src="../../static/js/common/template.js"></script>
 		<script type="text/javascript">
 			mui.init()
 			mui.ready(function() {
@@ -68,6 +86,23 @@
 						}
 					}
 				}, false)
+
+				//template.js例子
+				var data = {
+					title: 'template.js',
+					list: [{
+						"name": "张山"
+					}, {
+						"name": "李四"
+					}, {
+						"name": "王五"
+					}]
+				};
+				var html = template("templateExample", {
+					title: data.title,
+					rows: data.list
+				});
+				$("#example").html(html);
 			})
 		</script>
 	</body>

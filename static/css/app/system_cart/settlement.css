@@ -45,10 +45,11 @@
 }
 
 .settlementCloumn_right_btn {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	height: 40px;
 	line-height: 40px;
 	width: 100%;
+	border-radius: 3px;
 	background-color: #EA6F5A;
 	color: #FFFFFF;
 	font-size: 18px;
@@ -319,4 +320,125 @@
 	padding-top: 2px;
 	float: right;
 	/*border: 1px solid red;*/
+}
+
+
+/*立即支付弹出框*/
+
+#pay,#payType {
+	/*border: 1px solid red;*/
+	height: 60%;
+	background-color: white;
+}
+.payTitleColumn{
+	/*border: 1px solid red;*/
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	background-color: white;
+	z-index: 999;
+}
+.pay_title {
+	/*border: 1px solid red;*/
+	height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #F1F0F2;
+	
+}
+
+.closeBtn,.backBtn {
+	/*border: 1px solid red;*/
+	float: left;
+	margin-top: 8px;
+	margin-left: 5px;
+	font-size: 20px !important;
+	color: #777B84 !important;
+}
+
+.title_name {
+	/*border: 1px solid red;*/
+	display: inline-block;
+	margin-top: 8px;
+	font-size: 18px;
+}
+
+.pay_money {
+	/*border: 1px solid red;*/
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.payList1 {
+	margin-top: 120px !important;
+	padding: 0px !important;
+	background-color: white !important;
+	text-align: left !important;
+	font-size: 14px;
+}
+.payList2 {
+	margin-top: 40px !important;
+	padding: 0px !important;
+	background-color: white !important;
+	text-align: left !important;
+	font-size: 14px;
+}
+
+.pay_account span:first-child {
+	/*border: 1px solid red;*/
+	display: inline-block;
+	float: left;
+	color: #8F8F8F;
+}
+
+.pay_account span:last-child {
+	/*border: 1px solid red;*/
+	display: inline-block;
+	float: right;
+	color: black;
+}
+
+.pay_type a {
+	color: #8F8F8F !important;
+}
+
+.pay_type a span {
+	color: black;
+}
+
+.pay_btn {
+	/*border: 1px solid red;*/
+	height: 40px;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 5px;
+	z-index: 999;
+}
+
+.pay_btn span {
+	width: 95%;
+	height: 100%;
+	display: inline-block;
+	border-radius: 3px;
+	font-size: 16px;
+	background-color: #EA6F5A;
+	color: white;
+}
+
+/*选择付款方式弹出框*/
+.pay_type_desc{
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	font-size: 20px;
+}
+.payList2 a div:first-child span{
+	font-weight: bold;
+	color: #EA6F5A;
+}
+.payList2 a div:last-child{
+	color: black;
 }

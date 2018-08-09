@@ -103,7 +103,7 @@
 /*资金详情:参考微信钱包中零钱明细+支付宝收支明细*/
 .accountDetail .mui-card:first-child{
 	margin: 0px;
-	background-color: #C7EDCC;
+	background-color: #FFFFFF;
 	box-shadow:none;
 	border-bottom: 1px solid #C8C7CC;
 }
@@ -199,9 +199,9 @@
 	margin-right: 5px;
 }
 
-/*底部上拉加载样式*/
+/*底部上拉加载样式->common.css设置*/
 .addressList ~ .mui-pull-bottom-pocket{
-	margin-top: -15px;
+	/*margin-top: -15px;*/
 }
 
 /*添加新地址：参考淘宝*/

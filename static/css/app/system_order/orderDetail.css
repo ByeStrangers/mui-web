@@ -29,15 +29,16 @@
 .orderStatus {
 	width: 100%;
 	height: 90px;
-	background-color: #FF8301;
-	border: 1px solid red;
+	/*background-color: #FF8301;*/
+	background: linear-gradient(to right, #FF9000, #FF5100);
+	padding: 20px 30px;
+	/*border: 1px solid red;*/
 }
 
 .orderStatus_desc {
 	/*border: 1px solid red;*/
 	width: 80%;
 	height: 60%;
-	margin: 20px 30px;
 }
 
 .orderStatus_desc span:first-child {

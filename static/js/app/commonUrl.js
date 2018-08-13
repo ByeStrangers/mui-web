@@ -1,0 +1,1 @@
+var baseUrl = location.origin + '/';//返回url中完整的协议和主机地址部分,包括端口

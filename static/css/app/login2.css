@@ -25,18 +25,16 @@
 	right: 0px;
 	font-family: simhei;
 	font-size: medium;
+	color: #EA6F5A;
+	/*background-color: #C7EDCC;*/
 	border: none;
 }
-.hqyzm_unClick{
-	color: white;
-	background-color: #EA6F5A;
+/*获取验证码按下效果*/
+.hqyzm:enabled:active{
+	background-color: #C7EDCC;
+	color: #C0C0C0;
+	border: none;
 }
-.hqyzm_clicked{
-	color: #9DADC6;
-	background-color: #E3E4E9;
-}
-
-
 
 .link-area {
 	display: block;
@@ -44,5 +42,5 @@
 	margin-bottom: 15px;
 	text-align: center;
 	font-family: simhei;
-	font-size: medium;
+	font-size: small;
 }
